@@ -3,14 +3,14 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaShoppingBag } from "react-icons/fa"
+import { GiRunningShoe } from "react-icons/gi"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
-    <FaShoppingBag />
+    <GiRunningShoe />
   </Layout>
 )
 
