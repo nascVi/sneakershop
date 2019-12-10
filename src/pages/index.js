@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { /*Link,*/ graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => (
     {/* <GiRunningShoe /> */}
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="Shoes O 972"
+      title="Shoes One 972"
     />
     <Info />
   </Layout>

@@ -1,7 +1,10 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
-    title: `Shoes O 972`,
-    description: `Shoes O est un sneakers shop pour les sneakers lovers.`,
+    title: `Shoes One 972`,
+    description: `Shoes One est un sneakers shop pour les sneakers lovers.`,
     author: `@lpchamps`,
   },
   plugins: [
@@ -11,6 +14,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // Learn about environment variables: https://gatsby.app/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-transformer-sharp`,

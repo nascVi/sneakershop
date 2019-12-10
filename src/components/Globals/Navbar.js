@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../../images/vans_original.svg'
+import logo from '../../images/logo.svg'
 import { FaShoppingBag } from "react-icons/fa"
 
 export default class Navbar extends Component {
@@ -34,7 +34,7 @@ export default class Navbar extends Component {
     };
     render() {
         return (
-            <nav className="navbar navbar-expand-sm bg-light navbar-light">
+            <nav className="navbar navbar-expand-sm navbar-light">
                 <Link to="/" className="navbar-brand">
                     <img src={logo} alt="logo" />
                 </Link>

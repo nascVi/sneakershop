@@ -1,11 +1,10 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { /*Link,*/ graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import { GiRunningShoe } from "react-icons/gi"
 import BackgroundSection from "../components/Globals/BackgroundSection"
-import Info from "../components/Home/Info"
 
 const AboutPage = ({ data }) => (
   <Layout>
@@ -13,8 +12,7 @@ const AboutPage = ({ data }) => (
     {/* <GiRunningShoe /> */}
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="Who we are!"
-    />
+      title="Who we are!" style="about-background" />
     <br />
     <br />
     <div className="about text-center">
@@ -33,18 +31,21 @@ const AboutPage = ({ data }) => (
           they designed our past 70's, 80's, 90's, Millenium, and now running,
           running, running.
         </span>
-      </p>
-      <p>
+        <br />
         <span>
           Progress is here to get us fast as cool, at catching the legendaries
           of our fantasies.
         </span>
+        <br />
+        <span>
+          We share with you the best selection. treasures of the original, or
+          modern flavor collections.
+        </span>
       </p>
       <p>
         <span>
-          We share with you the best selection. treasures of the original, or
-          modern flavor collections
-        </span>
+          Enjoy the tour, may you find the perfect match!
+      </span>
       </p>
       <br />
     </div>
