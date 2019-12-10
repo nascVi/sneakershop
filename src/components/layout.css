@@ -49,5 +49,5 @@ h6 {
   color: var(--mainPurple) !important;
 }
 .footer {
-  background: var(--mainGreen);
+  background: var(--mainPurple) !important;
 }
