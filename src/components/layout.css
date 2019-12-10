@@ -1,6 +1,6 @@
 :root {
   --mainPurple: #512c62;
-  --mainOrange: #fb5b5a;
+  --mainOrange: rgb(251, 91, 90);
   --mainGreen: #45969b;
   --mainLight: #ececeb;
   --mainRed: #c70d3a;
@@ -29,4 +29,25 @@ h6 {
   cursor: pointer;
   color: var(--mainOrange);
   font-size: 2rem;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(251, 91, 90, 0.5), rgb(251, 91, 90));
+  background-position: center;
+  background-size: cover;
+}
+.btn-yellow {
+  color: var(--mainOrange);
+  border-color: var(--mainOrange);
+}
+.btn-yellow:hover {
+  background: var(--mainOrange);
+  color: var(--mainPurple) !important;
+}
+.footer {
+  background: var(--mainGreen);
 }

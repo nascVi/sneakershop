@@ -12,10 +12,10 @@ const Layout = ({ children }) => (
     {children}
     <Footer />
   </>
-);
+)
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
-};
+  children: PropTypes.node.isRequired,
+}
 
-export default Layout;
+export default Layout
