@@ -1,5 +1,5 @@
 import React from "react"
-import { /*Link,*/ graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,23 +8,24 @@ import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
 import Menu from "../components/Home/Menu"
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    {/* <GiRunningShoe /> */}
-    <BackgroundSection
-      img={data.img.childImageSharp.fluid}
-      title="Shoes One 972"
-    />
-    <Info />
-    <Menu
-      items={data.menu}
-    />
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      {/* <GiRunningShoe /> */}
+      <BackgroundSection
+        img={data.img.childImageSharp.fluid}
+        title="Shoes One 972"
+        styleClass="default-background"
+      />
+      <Info />
+      <Menu items={data.menu} />
+    </Layout>
+  );
+};
 
 export const query = graphql`
-  {
+  query {
     img: file(relativePath: { eq: "sneakersC.png" }) {
       childImageSharp {
         fluid {
@@ -41,19 +42,18 @@ export const query = graphql`
           size
           description{
             description
-            }
+          }
           price
           category
-          image{
-            fixed(width: 50, height: 50){
-              ...GatsbyContentfulFixed_tracedSVG
+          image {
+            fluid(maxHeight: 150, maxWidth:150){
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
       }
     }
   }
+`;
 
-`
-
-export default IndexPage
+export default IndexPage;
