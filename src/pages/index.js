@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -35,19 +35,19 @@ export const query = graphql`
     }
 
     menu: allContentfulShoesOneItem {
-      edges{
+      edges {
         node {
           id
           title
           size
-          description{
+          description {
             description
           }
           price
           category
           image {
-            fluid(maxHeight: 150, maxWidth:150){
-              ...GatsbyContentfulFluid_tracedSVG
+            fixed(width:150, height: 150) {
+              ...GatsbyContentfulFixed_tracedSVG
             }
           }
         }
