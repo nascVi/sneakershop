@@ -70,7 +70,7 @@ export default class Menu extends Component {
                                         className="col-11 col-md-6 my-2 d-flex mx-auto"
                                     >
                                         <div>
-                                            {/*<Img fixed={node.image.fixed.tracedSVG} /> */}
+                                            {/*<Img fixed={node.image.fixed}  />*/}
                                         </div>
                                         <div className="flex-grow-1 px-3">
                                             <div className="d-flex justify-content-between">
