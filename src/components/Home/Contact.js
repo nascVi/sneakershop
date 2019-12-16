@@ -25,6 +25,8 @@ export default function Contact() {
                         {/* mail */}
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
+
+                            {/* Case study for no-response to customers mail */}
                             <input
                                 type="text"
                                 className="form-control"
