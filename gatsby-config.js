@@ -31,6 +31,9 @@ module.exports = {
       options: {
         apiKey: process.env.SNIPCART_API,
         autopop: true
+      },
+      "actions": {
+        "continue_shopping": "Continuer les achats"
       }
     },
     {
