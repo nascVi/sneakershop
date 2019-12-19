@@ -8,7 +8,7 @@ export default function Contact() {
             <div className="row">
                 <div className="col-10 col-sm-8 col-md-6 mx-auto">
                     <form
-                        action="https://formspree.io/vaiiho.nascimbene@gmail.com"
+                        action="https://formspree.io/pnpeedj@gmail.com"
                         method="POST"
                     >
                         {/* name */}
