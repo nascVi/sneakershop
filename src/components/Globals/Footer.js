@@ -6,10 +6,10 @@ export default function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-10 mx-auto col-md-6 text-yellow text-center text-capitalize">
-                        <h7>
+                        <div>
                             ©{new Date().getFullYear()} - <span className="footer-brand"> Shoes One 972</span> - At {` `}
                             <a className="footer-link" href="https://lpchamps.cf">lpchamps<span className="footer-link-ts">`</span></a> make
-                        </h7>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -34,7 +34,7 @@ export default class Menu extends Component {
                 return { shoesOneItems: items };
             });
         }
-        console.log(category);
+        // console.log(category);
     };
     render() {
         if (this.state.items.length > 0) {

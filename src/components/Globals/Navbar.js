@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../../images/logo.svg'
+import logo from '../../images/logoLast.svg'
 import { FaShoppingBag } from "react-icons/fa"
 
 export default class Navbar extends Component {
@@ -35,9 +35,6 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-sm navbar-light">
-                <Link to="/" className="navbar-brand">
-                    <img src={logo} alt="logo" />
-                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -46,22 +43,25 @@ export default class Navbar extends Component {
                     <span className="navbar-toggler-icon" />
                 </button>
                 <div className={this.state.css}>
-                    <ul className="navbar-nav mx-auto">
+                    <ul className="navbar-nav mx-auto ml-sm-5">
                         {this.state.links.map(link => {
                             return (
                                 <li key={link.id} className="nav-item">
-                                    <Link to={link.path} className="nav-link text-capitalize ">
+                                    <Link to={link.path} className="nav-link text-capitalize">
                                         {link.text}
                                     </Link>
                                 </li>
                             );
                         })}
-
-                        <li className="nav-item ml-sm-5">
-                            <FaShoppingBag className="cart-icon snipcart-checkout snipcart-checkout" />
-                        </li>
                     </ul>
+                    {/*<li className="nav-item ml-sm-5">
+                </li>*/}
                 </div>
+                <Link to="/" className="navbar-brand mx-auto col-6">
+                    <img src={logo} alt="logo" />
+                </Link>
+
+                <FaShoppingBag className="cart-icon snipcart-checkout snipcart-checkout col-1" />
             </nav>
         );
     }
