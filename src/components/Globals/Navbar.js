@@ -43,7 +43,7 @@ export default class Navbar extends Component {
                     <span className="navbar-toggler-icon" />
                 </button>
                 <div className={this.state.css}>
-                    <ul className="navbar-nav mx-auto ml-sm-5">
+                    <ul className="navbar-nav mx-auto ml-sm-5 col-12">
                         {this.state.links.map(link => {
                             return (
                                 <li key={link.id} className="nav-item">
@@ -61,7 +61,7 @@ export default class Navbar extends Component {
                     <img src={logo} alt="logo" />
                 </Link>
 
-                <FaShoppingBag className="cart-icon snipcart-checkout snipcart-checkout col-1" />
+                <FaShoppingBag className="cart-icon snipcart-checkout snipcart-checkout col-2" />
             </nav>
         );
     }
