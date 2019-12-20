@@ -20,9 +20,9 @@ const IndexPage = ({ data }) => {
         title="Shoes One 972"
         styleClass="default-background"
       />
-      <Info />
-      <Menu items={data.menu} />
       <Products />
+      <Menu items={data.menu} />
+      <Info />
       <Contact />
     </Layout>
   );

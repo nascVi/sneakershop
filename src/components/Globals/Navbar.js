@@ -11,12 +11,22 @@ export default class Navbar extends Component {
             {
                 id: 1,
                 path: "/",
-                text: "home"
+                text: "Accueil"
             },
             {
                 id: 2,
-                path: "/about",
-                text: "about"
+                path: "/shoesone",
+                text: "shoesone"
+            },
+            {
+                id: 3,
+                path: "/boutique",
+                text: "boutique"
+            },
+            {
+                id: 4,
+                path: "/faq",
+                text: "faq"
             }
         ]
 
@@ -43,7 +53,7 @@ export default class Navbar extends Component {
                     <span className="navbar-toggler-icon" />
                 </button>
                 <div className={this.state.css}>
-                    <ul className="navbar-nav mx-auto ml-sm-5 col-12">
+                    <ul className="navbar-nav mx-auto ml-sm-5 col-12 py-3">
                         {this.state.links.map(link => {
                             return (
                                 <li key={link.id} className="nav-item">
