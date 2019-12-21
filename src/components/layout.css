@@ -41,6 +41,11 @@ h6 {
   font-size: 2rem;
 }
 
+.about {
+  font-size: 1.5rem;
+  /* font-family: "Courier New", Courier, monospace !important; */
+}
+
 .default-background,
 .about-background {
   min-height: 90vh;

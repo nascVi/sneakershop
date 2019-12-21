@@ -12,7 +12,7 @@ export default function Info() {
             <p className="lead text-muted mb-5">
               We are concieving our e-commerce from the french west-indies...
             </p>
-            <Link to="/about/">
+            <Link to="/shoesone">
               <button className="btn text-uppercase btn-yellow">
                 Infos
               </button>
