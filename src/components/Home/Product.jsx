@@ -19,7 +19,7 @@ export default function Product({ product }) {
                         data-item-url="https://shoeso972.netlify.com/"
                         data-item-name={product.title}
                     >
-                        up my cart
+                        Ajouter
                     </button>
                 </div>
             </div>

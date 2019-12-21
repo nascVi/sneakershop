@@ -41,7 +41,7 @@ export default class Menu extends Component {
             return (
                 <section className="menu py-5">
                     <div className="container">
-                        <Title title="the best sellers" />
+                        <Title title="Les marques" />
                         {/* categories */}
                         <div className="row mb-5">
                             <div className="col-10 mx-auto text-center">

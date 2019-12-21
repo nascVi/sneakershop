@@ -19,6 +19,7 @@ const IndexPage = ({ data }) => {
         img={data.img.childImageSharp.fluid}
         title="Shoes One 972"
         styleClass="default-background"
+        display="inherit"
       />
       <Products />
       <Menu items={data.menu} />
@@ -32,7 +33,7 @@ export const query = graphql`
   query {
     img: file(relativePath: { eq: "sneakersC.png" }) {
       childImageSharp {
-        fluid {
+        fluid (maxHeight: 2000){
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }

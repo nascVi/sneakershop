@@ -4,7 +4,7 @@ import Title from '../Globals/Title';
 export default function Contact() {
     return (
         <section className="contact py-5">
-            <Title title="Contact us" />
+            <Title title="Nous Contacter" />
             <div className="row">
                 <div className="col-10 col-sm-8 col-md-6 mx-auto">
                     <form
@@ -43,7 +43,7 @@ export default function Contact() {
                                     className="form-control"
                                     name="description"
                                     id="description"
-                                    placeholder="youre description..."
+                                    placeholder="your comments..."
                                 />
                             </div>
                             {/* Submit */}
@@ -51,7 +51,7 @@ export default function Contact() {
                                 type="submit"
                                 className="btn btn-yellow btn-block text-capitalize mt-5"
                             >
-                                Submit
+                                Envoyer
                             </button>
                         </div>
                     </form>
