@@ -15,10 +15,10 @@ export default function Footer() {
                             <a className="footer-link" href="https://lpchamps.cf">lpchamps<span className="footer-link-ts">`</span></a> make
                         </div>
                         <div className="footer-soc-meds mx-auto col-5 py-2">
-                            <a href="/"><IoLogoFacebook className="footer-Fb-med  mr-3" /></a>
-                            <a href="https://www.instagram.com/shoesone972/"><IoLogoInstagram className="footer-Insta-med mr-3" /></a>
-                            <a href="/"><IoLogoGithub className="footer-Git-med mr-3" /></a>
-                            <a href="/"><IoLogoWhatsapp className="footer-Wa-med" /></a>
+                            <a href="https://www.facebook.com/shoesone972"><IoLogoFacebook className="footer-Fb-med  mr-3" /></a>
+                            <a href="https://www.instagram.com/shoesone972"><IoLogoInstagram className="footer-Insta-med mr-3" /></a>
+                            <a href="https://github.com/nascVi/sneakershop"><IoLogoGithub className="footer-Git-med mr-3" /></a>
+                            <a href="https://chat.whatsapp.com/K1L90FRUWeBDZqX49OqgMY"><IoLogoWhatsapp className="footer-Wa-med" /></a>
                         </div>
                     </div>
                 </div>
