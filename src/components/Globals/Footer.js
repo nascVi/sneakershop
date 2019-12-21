@@ -14,7 +14,7 @@ export default function Footer() {
                             ©{new Date().getFullYear()} - <span className="footer-brand"> Shoes One 972</span> - At {` `}
                             <a className="footer-link" href="https://lpchamps.cf">lpchamps<span className="footer-link-ts">`</span></a> make
                         </div>
-                        <div className="footer-soc-meds mx-auto col-5 py-2">
+                        <div className="footer-soc-meds mx-auto col-7 py-2">
                             <a href="https://www.facebook.com/shoesone972"><IoLogoFacebook className="footer-Fb-med  mr-3" /></a>
                             <a href="https://www.instagram.com/shoesone972"><IoLogoInstagram className="footer-Insta-med mr-3" /></a>
                             <a href="https://github.com/nascVi/sneakershop"><IoLogoGithub className="footer-Git-med mr-3" /></a>

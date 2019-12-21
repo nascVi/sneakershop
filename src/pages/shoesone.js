@@ -54,7 +54,7 @@ const AboutPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "nikeA.png" }) {
+    img: file(relativePath: { eq: "nikeB.png" }) {
       childImageSharp {
         fluid (maxHeight: 2000){
           ...GatsbyImageSharpFluid_tracedSVG
