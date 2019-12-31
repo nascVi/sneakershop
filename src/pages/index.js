@@ -50,7 +50,7 @@ export const query = graphql`
           }
           price
           category
-          image{
+          image {
             fluid(maxHeight: 500){
             ...GatsbyContentfulFluid_tracedSVG
             }

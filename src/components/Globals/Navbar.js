@@ -3,6 +3,13 @@ import { Link } from 'gatsby'
 import logo from '../../images/logoLast.svg'
 import { FaShoppingBag } from "react-icons/fa"
 
+import Search from "../../Search"
+
+const searchIndices = [
+    { name: `Names`, title: `Names`, hitComp: `PageHit` },
+    { name: `Prices`, hitComp: `PostHit` },
+]
+
 export default class Navbar extends Component {
     state = {
         navbarOpen: false,
@@ -70,7 +77,7 @@ export default class Navbar extends Component {
                 <Link to="/" className="navbar-brand mx-auto col-6">
                     <img src={logo} alt="logo" />
                 </Link>
-
+                <Search collapse indices={searchIndices} />
                 <FaShoppingBag className="cart-icon snipcart-checkout snipcart-checkout col-2" />
             </nav>
         );
