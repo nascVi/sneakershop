@@ -1,61 +1,30 @@
-const pageQuery = `{
-  pages: allMarkdownRemark(
-    filter: {
-      fileAbsolutePath: { regex: "/pages/" },
-      frontmatter: {purpose: {eq: "page"}}
-    }
-  ) {
+const blogQuery = `
+{
+  allContentfulShoesOneProduct {
     edges {
       node {
-        objectID: id
-        frontmatter {
-          title
-          slug
+        id
+        title
+        description {
+          description
         }
-        excerpt(pruneLength: 5000)
+        price
+        size
+        category
+        image {
+          fixed(width: 150, height: 150) {
+            src
+          }
+        }
       }
     }
   }
 }`
-
-const postQuery = `{
-  posts: allMarkdownRemark(
-    filter: { fileAbsolutePath: { regex: "/posts/" } }
-  ) {
-    edges {
-      node {
-        objectID: id
-        frontmatter {
-          title
-          slug
-          date(formatString: "MMM D, YYYY")
-          tags
-        }
-        excerpt(pruneLength: 5000)
-      }
-    }
-  }
-}`
-
-const flatten = arr =>
-  arr.map(({ node: { frontmatter, ...rest } }) => ({
-    ...frontmatter,
-    ...rest,
-  }))
-const settings = { attributesToSnippet: [`excerpt:20`] }
 
 const queries = [
   {
-    query: pageQuery,
-    transformer: ({ data }) => flatten(data.pages.edges),
-    indexName: `Pages`,
-    settings,
-  },
-  {
-    query: postQuery,
-    transformer: ({ data }) => flatten(data.posts.edges),
-    indexName: `Posts`,
-    settings,
+    query: blogQuery,
+    transformer: ({ data }) => data.allContentfulShoesOneProduct.edges.node
   },
 ]
 

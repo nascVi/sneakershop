@@ -1,7 +1,6 @@
 const queries = require("./src/utils/algolia");
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-});
+const dotenv = require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Shoes One 972`,
@@ -9,16 +8,6 @@ module.exports = {
     author: `@lpchamps`
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-algolia`,
-      options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        queries,
-        chunkSize: 10000, // default: 1000
-      },
-    },
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,13 +27,21 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-snipcart',
+      resolve: "gatsby-plugin-snipcart",
       options: {
         apiKey: process.env.SNIPCART_API,
         autopop: true
-      },
-      "actions": {
-        "continue_shopping": "Continuer les achats"
+      }
+    },
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+        queries,
+        chunkSize: 1000
       }
     },
     {
@@ -58,9 +55,9 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/logo.svg` // This path is relative to the root of the site.
       }
-    },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
-}
+    // To learn more, visit: https://gatsby.app/offline
+    // 'gatsby-plugin-offline',
+  ]
+};
