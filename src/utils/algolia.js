@@ -1,31 +1,35 @@
-const blogQuery = `
-{
+const sizeQuery = `{
   allContentfulShoesOneProduct {
     edges {
-      node {
+      node{
         id
         title
-        description {
+        size
+        price
+        description{
+          id
           description
         }
-        price
-        size
-        category
-        image {
-          fixed(width: 150, height: 150) {
-            src
-          }
-        }
+        
       }
     }
   }
 }`
-
+// const flatten = arr =>
+//   arr.map(({ node: { frontmatter, ...rest } }) => ({
+//     ...frontmatter,
+//     ...rest,
+//   }))
+// const settings = { attributesToSnippet: [`excerpt:20`] }
 const queries = [
+  // {
+  //   query: sizeQuery,
+  //   transformer: ({ data }) => flatten(data.pages.edges)
+  // },
   {
-    query: blogQuery,
-    transformer: ({ data }) => data.allContentfulShoesOneProduct.edges.node
-  },
+    query: sizeQuery,
+    transformer: ({ data }) => data.allContentfulShoesOneProduct.edges
+  }
 ]
 
 module.exports = queries
