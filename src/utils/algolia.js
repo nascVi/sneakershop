@@ -1,16 +1,14 @@
 const sizeQuery = `{
-  allContentfulShoesOneProduct {
+    allContentfulShoesOneProduct {
     edges {
-      node{
-        id
-        title
-        size
+      node {
         price
+        size
+        title
         description{
           id
           description
         }
-        
       }
     }
   }
@@ -28,7 +26,7 @@ const queries = [
   // },
   {
     query: sizeQuery,
-    transformer: ({ data }) => data.allContentfulShoesOneProduct.edges
+    transformer: ({ data }) => data.allContentfulShoesOneProduct.edges,
   }
 ]
 
