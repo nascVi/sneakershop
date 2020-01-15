@@ -1,14 +1,16 @@
 import React from "react"
 import { /*Link,*/ graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 // import { GiRunningShoe } from "react-icons/gi"
-import BackgroundSection from "../components/Globals/BackgroundSection"
+import BackgroundSection from "../../components/Globals/BackgroundSection"
 
-const AboutPage = ({ data }) => (
+import Map from "./map"
+
+const shoesone = ({ data }) => (
   <Layout>
-    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Shoesone972" keywords={[`gatsby`, `application`, `react`]} />
     {/* <GiRunningShoe /> */}
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
@@ -49,6 +51,7 @@ const AboutPage = ({ data }) => (
       </p>
       <br />
     </div>
+    <Map />
   </Layout>
 )
 
@@ -64,4 +67,4 @@ export const query = graphql`
   }
 `
 
-export default AboutPage
+export default shoesone

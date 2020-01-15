@@ -1,5 +1,4 @@
-import React, { useState, useEffect, createRef } from "react"
-
+import React, { useState, /*useEffect*/ createRef } from "react"
 import {
     InstantSearch,
     Index,
@@ -7,8 +6,9 @@ import {
     connectStateResults,
 } from "react-instantsearch-dom"
 import algoliasearch from "algoliasearch/lite"
+
 import { Root, HitsWrapper, PoweredBy } from "./styles"
-import Input from "./Input"
+import Input from "./input"
 import * as hitComps from "./hitComps"
 
 const Results = connectStateResults(
@@ -20,7 +20,6 @@ const Stats = connectStateResults(
     ({ searchResults: res }) =>
         res && res.nbHits > 0 && `${res.nbHits} result${res.nbHits > 1 ? `s` : ``}`
 )
-
 // const useClickOutside = (ref, handler, events) => {
 //     if (!events) events = [`mousedown`, `touchstart`]
 //     const detectClickOutside = event =>
@@ -47,7 +46,7 @@ export default function Search({ indices, collapse, hitsAsGrid }) {
     return (
         <InstantSearch
             searchClient={searchClient}
-            indexName="Shoesones"
+            indexName="shoesone"
             onSearchStateChange={({ query }) => setQuery(query)}
             root={{ Root, props: { ref } }}
         >

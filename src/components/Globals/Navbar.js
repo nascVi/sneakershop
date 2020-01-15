@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 import logo from "../../images/logoLast.svg"
 import { FaShoppingBag } from "react-icons/fa"
 
-import Search from "../../Search"
+import Search from "../search/index"
 
 const searchIndices = [
-  { name: `Names`, title: `Names`, hitComp: `PageHit` },
-  { name: `Prices`, hitComp: `PostHit` },
+  { size: `Sizes`, title: `Names`, hitComp: `PageHit` },
+  { price: `Prices`, hitComp: `PostHit` },
 ]
 
 export default class Navbar extends Component {
@@ -22,8 +22,8 @@ export default class Navbar extends Component {
       },
       {
         id: 2,
-        path: "/shoesone",
-        text: "Shoesone",
+        path: "/shoesone/shoesone",
+        text: "Shoesone972",
       },
       {
         id: 3,
@@ -40,13 +40,13 @@ export default class Navbar extends Component {
   navbarHandler = () => {
     this.state.navbarOpen
       ? this.setState({
-          navbarOpen: false,
-          css: "collapse navbar-collapse",
-        })
+        navbarOpen: false,
+        css: "collapse navbar-collapse",
+      })
       : this.setState({
-          navbarOpen: true,
-          css: "collapse navbar-collapse show",
-        })
+        navbarOpen: true,
+        css: "collapse navbar-collapse show",
+      })
   }
   render() {
     return (

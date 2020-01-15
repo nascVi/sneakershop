@@ -1,23 +1,23 @@
-const sizeQuery = `{
-    allContentfulShoesOneProduct {
+const pageQuery = `{
+pages: allContentfulShoesOneProduct {
     edges {
       node {
-        price
-        size
         title
-        description{
+        description {
           id
           description
         }
+        price
+        size
       }
     }
   }
 }`
-// const flatten = arr =>
-//   arr.map(({ node: { frontmatter, ...rest } }) => ({
-//     ...frontmatter,
-//     ...rest,
-//   }))
+const flatten = arr =>
+  arr.map(({ node: { frontmatter, ...rest } }) => ({
+    ...frontmatter,
+    ...rest,
+  }))
 // const settings = { attributesToSnippet: [`excerpt:20`] }
 const queries = [
   // {
@@ -25,8 +25,8 @@ const queries = [
   //   transformer: ({ data }) => flatten(data.pages.edges)
   // },
   {
-    query: sizeQuery,
-    transformer: ({ data }) => data.allContentfulShoesOneProduct.edges,
+    query: pageQuery,
+    transformer: ({ data }) => flatten(data.pages.edges),
   }
 ]
 

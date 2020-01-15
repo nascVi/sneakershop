@@ -13,7 +13,7 @@ import Contact from "../components/Home/Contact";
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      <SEO title="Accueil" keywords={[`gatsby`, `application`, `react`]} />
       {/* <GiRunningShoe /> */}
       <BackgroundSection
         img={data.img.childImageSharp.fluid}

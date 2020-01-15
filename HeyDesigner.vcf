@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION;TYPE=WORK:3.0
+FN;CHARSET=UTF-8:Tamas Sari
+N;CHARSET=UTF-8:Tamas Sari;;;;
+PROFILE:VCARD
+ADR;CHARSET=UTF-8:;;...;Budapest;Bu;1051;Hungary
+EMAIL:tamas@heydesigner.com
+ORG;CHARSET=UTF-8:HeyDesigner
+URL:http://heydesigner.com
+END:VCARD
