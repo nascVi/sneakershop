@@ -1,4 +1,4 @@
-import React, { useState, /*useEffect*/ createRef } from "react"
+import React, { useState, /*useEffect,*/ createRef } from "react"
 import {
     InstantSearch,
     Index,
@@ -13,26 +13,12 @@ import * as hitComps from "./hitComps"
 
 const Results = connectStateResults(
     ({ searchState: state, searchResults: res, children }) =>
-        res && res.nbHits > 0 ? children : `No results for '${state.query}'`
+        res && res.nbHits > 0 ? children : `No results for ${state.query}`
 )
-
 const Stats = connectStateResults(
     ({ searchResults: res }) =>
         res && res.nbHits > 0 && `${res.nbHits} result${res.nbHits > 1 ? `s` : ``}`
 )
-// const useClickOutside = (ref, handler, events) => {
-//     if (!events) events = [`mousedown`, `touchstart`]
-//     const detectClickOutside = event =>
-//         !ref.current.contains(event.target) && handler()
-//     useEffect(() => {
-//         for (const event of events)
-//             document.addEventListener(event, detectClickOutside)
-//         return () => {
-//             for (const event of events)
-//                 document.removeEventListener(event, detectClickOutside)
-//         }
-//     })
-// }
 
 export default function Search({ indices, collapse, hitsAsGrid }) {
     const ref = createRef()
@@ -42,11 +28,23 @@ export default function Search({ indices, collapse, hitsAsGrid }) {
         process.env.GATSBY_ALGOLIA_APP_ID,
         process.env.GATSBY_ALGOLIA_SEARCH_KEY
     )
-    // useClickOutside(ref, () => setFocus(false))
+
+    // const handleClickOutside = event =>
+    //     !ref.current.contains(event.target) && setFocus(false)
+
+    // useEffect(() => {
+    //     [`mousedown`, `touchstart`].forEach(event =>
+    //         document.addEventListener(event, handleClickOutside)
+    //     )
+    //     return () =>
+    //         [`mousedown`, `touchstart`].forEach(event =>
+    //             document.removeEventListener(event, handleClickOutside)
+    //         )
+    // })
     return (
         <InstantSearch
             searchClient={searchClient}
-            indexName="shoesone"
+            indexName={indices[0].name}
             onSearchStateChange={({ query }) => setQuery(query)}
             root={{ Root, props: { ref } }}
         >
@@ -55,7 +53,7 @@ export default function Search({ indices, collapse, hitsAsGrid }) {
                 {indices.map(({ name, title, hitComp }) => (
                     <Index key={name} indexName={name}>
                         <header>
-                            <h3>{title}</h3>
+                            <h6>{title}</h6>
                             <Stats />
                         </header>
                         <Results>

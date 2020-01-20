@@ -6,8 +6,8 @@ import { FaShoppingBag } from "react-icons/fa"
 import Search from "../search/index"
 
 const searchIndices = [
-  { size: `Sizes`, title: `Names`, hitComp: `PageHit` },
-  { price: `Prices`, hitComp: `PostHit` },
+  { name: `Items`, title: `Best Sellers`, hitComp: `ItemHit` },
+  { name: `Products`, title: `Sneakers you look for`, hitComp: `ProductHit` },
 ]
 
 export default class Navbar extends Component {
@@ -73,7 +73,7 @@ export default class Navbar extends Component {
           {/*<li className="nav-item ml-sm-5">
                 </li>*/}
         </div>
-        <Link to="/" className="navbar-brand mx-auto col-6">
+        <Link to="/" className="navbar-brand mx-auto col-3">
           <img src={logo} alt="logo" />
         </Link>
         <Search collapse indices={searchIndices} />

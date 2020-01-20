@@ -1,41 +1,41 @@
 import React, { Fragment } from "react"
 import { Highlight, Snippet } from "react-instantsearch-dom"
 import { Link } from "gatsby"
-import { FaCalendar } from "react-icons/fa"
+import { MdFormatSize } from "react-icons/md"
 import { FaTags } from "react-icons/fa"
 
-export const PageHit = clickHandler => ({ hit }) => (
+export const ItemHit = clickHandler => ({ hit }) => (
     <div>
-        <Link to={hit.slug} onClick={clickHandler}>
-            <h4>
+        <Link to={hit.title} onClick={clickHandler}>
+            <h6>
                 <Highlight attribute="title" hit={hit} tagName="mark" />
-            </h4>
+            </h6>
         </Link>
-        <Snippet attribute="excerpt" hit={hit} tagName="mark" />
+        <Snippet attribute="size" hit={hit} tagName="mark" />
     </div>
 )
 
-export const PostHit = clickHandler => ({ hit }) => (
+export const ProductHit = clickHandler => ({ hit }) => (
     <div>
-        <Link to={`/` + hit.slug} onClick={clickHandler}>
-            <h4>
+        <Link to={`/` + hit.title} onClick={clickHandler}>
+            <h6>
                 <Highlight attribute="title" hit={hit} tagName="mark" />
-            </h4>
+            </h6>
         </Link>
         <div>
-            <FaCalendar size="1em" />
+            <FaTags size="1em" />
             &nbsp;
-      <Highlight attribute="date" hit={hit} tagName="mark" />
+        <Highlight attribute="size" hit={hit} tagName="mark" />
             &emsp;
-      <FaTags size="1em" />
+        <MdFormatSize size="1em" />
             &nbsp;
-      {hit.tags.map((tag, index) => (
-                <Fragment key={tag}>
+      {hit.size.map((size, index) => (
+                <Fragment key={size}>
                     {index > 0 && `, `}
-                    {tag}
+                    {size}
                 </Fragment>
             ))}
         </div>
-        <Snippet attribute="excerpt" hit={hit} tagName="mark" />
+        <Snippet attribute="price" hit={hit} tagName="mark" />
     </div>
 )
