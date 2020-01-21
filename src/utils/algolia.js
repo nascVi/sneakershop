@@ -1,34 +1,46 @@
-const itemQuery = `{
-items: allContentfulShoesOneItem{
+const itemsQuery = `{
+    items: allContentfulShoesOneProduct {
     edges {
       node {
-        id
-        title
         size
+        price
+        id
+        spaceId
+        updatedAt
+        title
         description {
           description
+          id
         }
-        category
-        price
-        createdAt(fromNow: true)
+        image{
+          fixed{
+            width
+          }
+        }
       }
     }
   }
 }`
 
-const productQuery = `{
-products: allContentfulShoesOneProduct{
+const productsQuery = `{
+    products: allContentfulShoesOneProduct {
     edges {
       node {
-        id
-        title
         size
+        price
+        id
+        spaceId
+        updatedAt
+        title
         description {
           description
+          id
         }
-        category
-        price
-        createdAt(fromNow: true)
+        image{
+          fixed{
+            width
+          }
+        }
       }
     }
   }
@@ -38,27 +50,17 @@ const flatten = arr =>
   arr.map(({ node: { ...rest } }) => ({
     ...rest,
   }))
-const settings = {
-  attributesToSnippet: [
-    'title',
-    'size',
-    'category',
-    'createdAt'
-  ]
-}
+// const settings = { attributesToSnippet: [`excerpt:20`] }
 const queries = [
   {
-    query: itemQuery,
+    query: itemsQuery,
     transformer: ({ data }) => flatten(data.items.edges),
     indexName: `Items`,
-    settings,
   },
   {
-    query: productQuery,
+    query: productsQuery,
     transformer: ({ data }) => flatten(data.products.edges),
     indexName: `Products`,
-    settings,
-  }
+  },
 ]
-
 module.exports = queries
