@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from "../Globals/Title";
-import Img from "gatsby-image";
+//import Img from "gatsby-image";
 // import { all } from 'any-promise';
 
 const getCategories = items => {
@@ -86,11 +86,11 @@ export default class Menu extends Component {
 
                                         </div>
                                         {/*No image?*/}
-                                        <div className="flex-grow-1 px-3">
+                                        {/*<div className="flex-grow-1 px-3">
                                             <Img
                                                 fluid={node.image}
                                             />
-                                        </div>
+                                </div>*/}
                                     </div>
                                 );
                             })}
