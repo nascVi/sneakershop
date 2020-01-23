@@ -28,7 +28,7 @@ export default function Products() {
     <StaticQuery query={getProducts} render={data => {
       return <section className="py-5">
         <div className="container">
-          <Title title="Nos derniers produits" />
+          <Title title="Les Sneakers" />
           <div className="row">
             {data.products.edges.map(({ node: product }
             ) => {

@@ -14,12 +14,11 @@ export default function Product({ product }) {
                     </div>
                     <button className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
                         data-item-id={product.id}
-                        data-item-price={product.price}
                         data-item-image={product.image.fluid.src}
                         data-item-url="https://shoeso972.netlify.com/"
                         data-item-name={product.title}
                     >
-                        Ajouter
+                        plus
                     </button>
                 </div>
             </div>

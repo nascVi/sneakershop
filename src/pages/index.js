@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { /*StaticQuery,*/ graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -46,13 +46,14 @@ export const query = graphql`
           title
           size
           description {
+            id
             description
           }
           price
           category
-          image {
-            fluid(maxHeight: 500){
-            ...GatsbyContentfulFluid_tracedSVG
+          image{
+            fluid(maxHeight:15){
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
