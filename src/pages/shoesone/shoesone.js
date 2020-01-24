@@ -22,14 +22,14 @@ const shoesone = ({ data }) => (
     <br />
     <div className="about text-center">
       <h2 className="about-greatings text-weight-blod">
-        BEL BONJOU , BIENVENUE , WELCOME  sur ShoesOne972.com <br /><i>le 1er site de destockage de sneakers en Martinique (centré)!</i>
+        BEL BONJOU , BIENVENUE , WELCOME  sur ShoesOne972.com <br /><i>le 1er site de destockage de sneakers en Martinique!</i>
       </h2>
       <br />
       <p className="about-text display-7">
         <span>
           <h4>SHOESONE972</h4> est une boutique en ligne spécialisée
       <br />de vente de sneakers en destockage et prenium basée en Martinique.
-      <br />Ce site est géré par la société Alexandre Agbassé n° Siret: 81489520700095
+      <br />Ce site est géré par la société au registre des commerces (Siret: 81489520700095)
       </span>
       </p>
       <p>

@@ -1,14 +1,17 @@
 import React, { Component } from "react"
 import Products from "./Products"
+import Layout from "../../components/layout"
 
 export default class maboutique extends Component {
   render() {
     return (
-      <div>
-        Bienvenu dans boutique!
+      <Layout>
+        <div>
+          Bienvenu dans boutique!
     <Products />
 
-      </div>
+        </div>
+      </Layout>
     )
   }
 }
