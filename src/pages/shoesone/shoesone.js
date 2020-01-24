@@ -9,7 +9,7 @@ import BackgroundSection from "../../components/Globals/BackgroundSection"
 import snapcode from "../../images/snapcode.svg"
 import whatsapp from "../../images/WhatsApp.svg"
 
-import Map from "./map"
+import GoogleMap from "./map"
 
 const shoesone = ({ data }) => (
   <Layout>
@@ -64,7 +64,7 @@ const shoesone = ({ data }) => (
           </span>
       </p>
       <br />
-      <Map />
+      <GoogleMap />
     </div>
   </Layout>
 )
