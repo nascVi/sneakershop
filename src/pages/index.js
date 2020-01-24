@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
 import Menu from "../components/Home/Menu"
-import Products from "../components/Home/Products";
+import Brands from "../components/Home/Brands";
 import Contact from "../components/Home/Contact";
 
 const IndexPage = ({ data }) => {
@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
         styleClass="default-background"
         display="inherit"
       />
-      <Products />
+      <Brands />
       <Menu items={data.menu} />
       <Info />
       <Contact />

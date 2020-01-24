@@ -21,13 +21,13 @@ const shoesone = ({ data }) => (
     <br />
     <br />
     <div className="about text-center">
-      <h3 className="about-greatings text-weight-blod">
+      <h2 className="about-greatings text-weight-blod">
         BEL BONJOU , BIENVENUE , WELCOME  sur ShoesOne972.com <br /><i>le 1er site de destockage de sneakers en Martinique (centré)!</i>
-      </h3>
+      </h2>
       <br />
       <p className="about-text display-7">
         <span>
-          <h5>SHOESONE972</h5> est une boutique en ligne spécialisée
+          <h4>SHOESONE972</h4> est une boutique en ligne spécialisée
       <br />de vente de sneakers en destockage et prenium basée en Martinique.
       <br />Ce site est géré par la société Alexandre Agbassé n° Siret: 81489520700095
       </span>
@@ -40,14 +40,14 @@ const shoesone = ({ data }) => (
           </span>
         <br />
         <br />
-        <h5>NOTRE EQUIPE</h5>
+        <h4>NOTRE EQUIPE</h4>
         <span>
           Nous sommes des passionnés de sneakers et nous restons à votre disposition
         <br />afin de passer vos commandes sur internet.
         </span>
         <br />
         <br />
-        <h5>NOUS CONTACTER</h5>
+        <h4>NOUS CONTACTER</h4>
         <span>
           Pour toute questions n’hésitez pas à nous contacter en utilisant le formulaire de contact
           <br />ou sur : <a href="mailto:contact@shoesone972.com">contact@shoesone972.com</a>. Nous vous répondrons dans de brefs délais (24h maximum).
@@ -57,7 +57,7 @@ const shoesone = ({ data }) => (
       </p>
       <p>
         <br />
-        <h5>NOUS SUIVRE</h5>
+        <h4>NOUS SUIVRE</h4>
         <span>
           Si vous voulez en savoir plus sur nos dernières sorties , nos achats et échanger avec nous,
           <br />vous pouvez également nous rejoindre sur nos différents réseaux sociaux (liens après la map en bas de page).

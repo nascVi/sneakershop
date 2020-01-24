@@ -27,7 +27,7 @@ export default class Navbar extends Component {
       },
       {
         id: 3,
-        path: "/maboutique",
+        path: "/boutique/maboutique",
         text: "Ma Boutique",
       },
       {
@@ -74,7 +74,7 @@ export default class Navbar extends Component {
                 </li>*/}
         </div>
         <Link to="/" className="navbar-brand mx-auto col-3">
-          <img src={logo} alt="logo" />
+          <img src={logo} height="200" width="200" alt="logo" />
         </Link>
         <Search collapse indices={searchIndices} />
         <FaShoppingBag className="cart-icon snipcart-checkout snipcart-checkout col-2" />
