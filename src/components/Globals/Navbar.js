@@ -6,8 +6,8 @@ import { FaShoppingBag } from "react-icons/fa"
 import Search from "../search/index"
 
 const searchIndices = [
-  { name: `Items`, title: `Best Sellers`, hitComp: `ItemHit` },
-  { name: `Products`, title: `Sneakers you look for`, hitComp: `ProductHit` },
+  { name: `Items`, title: `Notre stock`, hitComp: `ItemHit` },
+  { name: `Products`, title: `Votre recherche`, hitComp: `ProductHit` },
 ]
 
 export default class Navbar extends Component {
@@ -32,19 +32,19 @@ export default class Navbar extends Component {
       },
       {
         id: 4,
-        path: "/faq",
-        text: "FAQ",
-      },
-      {
-        id: 5,
-        path: "/custom",
+        path: "/custom-service",
         text: "Custom",
       },
       {
-        id: 6,
-        path: "/cleaning",
+        id: 5,
+        path: "/cleaning-service",
         text: "Cleaning",
       },
+      {
+        id: 6,
+        path: "/faq",
+        text: "FAQ",
+      }
     ],
   }
   navbarHandler = () => {

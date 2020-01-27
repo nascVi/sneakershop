@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from "../Globals/Title";
-//import Img from "gatsby-image";
+// import Img from "gatsby-image";
 // import { all } from 'any-promise';
 
 const getCategories = items => {
@@ -51,9 +51,11 @@ export default class Menu extends Component {
                                             type="button"
                                             key={index}
                                             className="btn btn-yellow text-capitalize m-3"
-                                            onClick={() => {
-                                                this.handleItems(category);
-                                            }}
+                                            onClick={
+                                                () => {
+                                                    this.handleItems(category);
+                                                }
+                                            }
                                         >
                                             {category}
                                         </button>
@@ -62,14 +64,12 @@ export default class Menu extends Component {
                             </div>
                         </div>
                         {/* items */}
-
                         <div className="row">
                             {this.state.shoesOneItems.map(({ node }) => {
                                 return (
 
                                     <div className="col-11 col-md-6 my-2 d-flex mx-auto"
                                         key={node.id}
-
                                     >
                                         <div className="flex-grow-1 px-3">
                                             <div className="d-flex justify-content-between">
@@ -83,14 +83,15 @@ export default class Menu extends Component {
                                             <div className="d-flex justify-content-between">
                                                 <h6 className="mb-0">{node.size[0]}</h6>
                                             </div>
-
                                         </div>
                                         {/*No image?*/}
-                                        {/*<div className="flex-grow-1 px-3">
+                                        {/*
+                                        <div className="flex-grow-1 px-3">
                                             <Img
                                                 fluid={node.image}
                                             />
-                                </div>*/}
+                                        </div>
+                                        */}
                                     </div>
                                 );
                             })}

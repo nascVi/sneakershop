@@ -7,8 +7,10 @@ export default class maboutique extends Component {
     return (
       <Layout>
         <div>
-          Bienvenu dans boutique!
-        <Products />
+          <h2>
+            Bienvenu dans boutique!
+          </h2>
+          <Products />
 
         </div>
       </Layout>

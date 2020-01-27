@@ -24,9 +24,10 @@ const getQuery = graphql`
 export default function Brands() {
     return (
         <>
-            <StaticQuery>
-                Here are displayed the brands in our account
-            </StaticQuery>
+        Brands sit here
+            // <StaticQuery>
+            //     Here are displayed the brands in our account
+            // </StaticQuery>
         </>
     );
 }

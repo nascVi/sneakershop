@@ -1,6 +1,6 @@
-carte?
-onglet recherche
-onglet ma boutique
+carte? v
+onglet recherche?
+onglet ma boutique v?
 
-compte client
+compte client?
 
