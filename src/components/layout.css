@@ -5,7 +5,7 @@
   --mainGreen: #45969b;
   --mainLight: #fffdf9;
   --mainRed: #c70d3a;
-  --mainDark: #393e46;
+  --mainDark: #2b2e33;
   --mainRef: #ffdbc5;
   --mainRefH: #ffbd69;
   --mainRefTs: #d3f4ff;
@@ -72,7 +72,7 @@ h6 {
   background: var(--mainTextSec);
 }
 .footer {
-  background: var(--mainPurple) !important;
+  background: var(--mainDark) !important;
 }
 .footer-brand {
   color: var(--mainRefTs);

@@ -22,12 +22,12 @@ export default class Navbar extends Component {
       },
       {
         id: 2,
-        path: "/shoesone/shoesone",
+        path: "/shoesone",
         text: "Shoesone972",
       },
       {
         id: 3,
-        path: "/boutique/maboutique",
+        path: "/maboutique",
         text: "Ma Boutique",
       },
       {

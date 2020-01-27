@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Products from "./Products"
+import Products from "../../components/Products"
 import Layout from "../../components/layout"
 
 export default class maboutique extends Component {
@@ -8,7 +8,7 @@ export default class maboutique extends Component {
       <Layout>
         <div>
           Bienvenu dans boutique!
-    <Products />
+        <Products />
 
         </div>
       </Layout>

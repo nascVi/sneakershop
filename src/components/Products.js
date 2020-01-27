@@ -1,6 +1,6 @@
 import React from 'react';
 import Product from "./Product";
-import Title from "../components/Globals/Title"
+import Title from "./Globals/Title"
 import { StaticQuery, graphql } from "gatsby";
 
 const getProducts = graphql`
