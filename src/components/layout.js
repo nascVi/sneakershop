@@ -8,6 +8,12 @@ import "./bootstrap.min.css"
 
 const Layout = ({ children }) => (
   <>
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&display=swap&subset=greek,latin-ext"
+        rel="stylesheet"
+      />
+    </head>
     <Navbar />
     {children}
     <Footer />

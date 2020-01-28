@@ -33,8 +33,8 @@ module.exports = {
       options: {
         apiKey: process.env.SNIPCART_APIKEY,
         autopop: true,
-        js: 'https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js',
-        styles: 'https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.css',
+        js: "https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.js",
+        styles: "https://cdn.snipcart.com/themes/v3.0.0/default/snipcart.css",
       },
     },
     `gatsby-plugin-styled-components`,
@@ -44,7 +44,7 @@ module.exports = {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
         queries,
-        chunkSize: 1000,
+        chunkSize: 10000,
       },
     },
     {
