@@ -7,8 +7,8 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
 import Menu from "../components/Home/Menu"
-import Brands from "../components/Home/Brands";
-import Contact from "../components/Home/Contact";
+import Brands from "../components/Brands"
+import Contact from "../components/Home/Contact"
 
 const IndexPage = ({ data }) => {
   return (
@@ -21,19 +21,19 @@ const IndexPage = ({ data }) => {
         styleClass="default-background"
         display="inherit"
       />
-      <Brands />
+      <Brands brands={data.brands} />
       <Menu items={data.menu} />
       <Info />
       <Contact />
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query {
     img: file(relativePath: { eq: "sneakersC.png" }) {
       childImageSharp {
-        fluid (maxHeight: 2000){
+        fluid(maxHeight: 2000) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
@@ -52,7 +52,7 @@ export const query = graphql`
           price
           category
           image {
-            fluid (maxHeight:15){
+            fluid(maxHeight: 15) {
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
@@ -60,7 +60,6 @@ export const query = graphql`
       }
     }
   }
-  
-`;
+`
 
-export default IndexPage;
+export default IndexPage

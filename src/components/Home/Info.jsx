@@ -10,7 +10,7 @@ export default function Info() {
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-center">
             <p className="lead text-muted mb-5">
-              BEL BONJOU , BIENVENUE , WELCOME sur ShoesOne972.com,{" "}
+              BEL BONJOU, BIENVENUE, WELCOME sur ShoesOne972.com,
               <span>
                 <i>le 1er site de destockage de sneakers en Martinique</i>
               </span>
