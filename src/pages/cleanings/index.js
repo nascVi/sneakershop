@@ -1,14 +1,13 @@
 import React, { Component } from "react"
-import Products from "../../components/Products"
 import Cleanings from "../../components/Cleanings"
 import Layout from "../../components/layout"
-export default class maboutique extends Component {
+
+export default class cleanings extends Component {
   render() {
     return (
       <Layout>
         <div>
-          <h2>Bienvenu dans votre boutique!</h2>
-          <Products />
+          <h2>Espace Cleanings!</h2>
           <Cleanings />
         </div>
       </Layout>

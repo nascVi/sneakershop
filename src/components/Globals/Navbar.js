@@ -32,12 +32,12 @@ export default class Navbar extends Component {
       },
       {
         id: 4,
-        path: "/custom-service",
+        path: "/custom",
         text: "Custom",
       },
       {
         id: 5,
-        path: "/cleaning-service",
+        path: "/cleanings",
         text: "Cleaning",
       },
       {
