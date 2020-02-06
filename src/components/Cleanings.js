@@ -10,8 +10,9 @@ const getCleanings = graphql`
           node {
             id
             title
+            price
             image {
-                fluid(maxHeight: 250) {
+                fluid {
                   ...GatsbyContentfulFluid_tracedSVG
                 }
             }
@@ -22,23 +23,23 @@ const getCleanings = graphql`
 `
 
 export default function Cleanings() {
-    return (
+  return (
     <StaticQuery
-    query={getCleanings}
-    render={data => {
+      query={getCleanings}
+      render={data => {
         return (
-        <section className="py-5">
-        <div className="container">
-          <Title title="Cleanings et Techniques" />
-          <div className="row">
-            {data.cleanings.edges.map(({ node: cleaning }) => {
-              return <Cleaning key={cleaning.id} cleaning={cleaning} />
-            })}
-          </div>
-        </div>
-      </section>
-     )
-    }}
+          <section className="cleanings py-5">
+            <div className="container">
+              <Title title="Cleanings et Techniques" />
+              <div className="row">
+                {data.cleanings.edges.map(({ node: cleaning }) => {
+                  return <Cleaning key={cleaning.id} cleaning={cleaning} />
+                })}
+              </div>
+            </div>
+          </section>
+        )
+      }}
     />
   )
 }

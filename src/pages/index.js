@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
       {/* <GiRunningShoe /> */}
       <BackgroundSection
         img={data.img.childImageSharp.fluid}
-        title="Shoes One 972"
+        title="shoesone972.com"
         styleClass="default-background"
         display="inherit"
       />

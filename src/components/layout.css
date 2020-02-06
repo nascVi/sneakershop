@@ -69,6 +69,7 @@ h6 {
   color: var(--mainPurple) !important;
 }
 .menu,
+.cleanings,
 .contact {
   background: var(--mainTextSec);
 }
