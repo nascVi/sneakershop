@@ -16,7 +16,7 @@ export default function Cleaning({ cleaning }) {
             <h6>{cleaning.type}</h6>
           </div>
           <button
-            className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
+            className="btn btn-yellow mt-3 text-capitalize snipcart-add-item snipcart-customer-signin"
             data-item-id={cleaning.id}
             data-item-image={cleaning.image.fluid}
             data-item-price={cleaning.price}
