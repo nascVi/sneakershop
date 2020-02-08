@@ -54,7 +54,9 @@ export default class Menu extends Component {
                         this.handleItems(category)
                       }}
                     >
+                      <b>
                       {category}
+                      </b>
                     </button>
                   )
                 })}
@@ -70,16 +72,18 @@ export default class Menu extends Component {
                   >
                     <div className="flex-grow-1 px-3">
                       <div className="d-flex justify-content-between">
-                        <h6 className="mb-0">{node.title}</h6>
+                        <h5 className="mb-0">{node.title}</h5>
                         <h6 className="text-yellow mb-0">{node.price}€</h6>
                       </div>
-
+                      <br />
                       <p>
-                        <small>{node.description.description}</small>
+                        <normal>{node.description.description}</normal>
                       </p>
                       <div className="d-flex justify-content-between">
                         <h6 className="mb-0">{node.size[0]}</h6>
                       </div>
+                      <br />
+                      <br />
                     </div>
                     {/*No image?*/}
                     {/*

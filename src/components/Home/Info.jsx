@@ -9,15 +9,13 @@ export default function Info() {
         <Title title="Shoesone972" />
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-center">
-            <p className="lead text-muted mb-5">
+            <p className="lead mb-5 font-weight-light">
               BEL BONJOU, BIENVENU sur shoesone972.com
-              <span>
-                <i>le 1er site de destockage de sneakers en Martinique</i>
-              </span>
-              ...
+              <br />
+              le 1er site de destockage de sneakers en Martinique
             </p>
             <Link to="/shoesone">
-              <button className="btn text-uppercase btn-yellow">Infos</button>
+              <button className="btn text-uppercase btn-yellow font-weight-bold">Infos</button>
             </Link>
           </div>
         </div>

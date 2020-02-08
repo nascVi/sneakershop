@@ -16,7 +16,7 @@ export default function Product({ product }) {
             <h6>{product.size}</h6>
           </div>
           <button
-            className="btn btn-yellow mt-3 text-capitalize snipcart-add-item snipcart-customer-signin"
+            className="btn btn-yellow mt-3 text-capitalize snipcart-add-item snipcart-customer-signin font-weight-bold"
             data-item-id={product.id}
             data-item-image={product.image.fluid.src}
             data-item-price={product.price}

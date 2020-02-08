@@ -19,7 +19,9 @@ export default function brand({ brand }) {
             className="btn btn-yellow mt-3 text-capitalize"
             data-item-url="https://shoeso972.netlify.com/"
           >
-            Juste pour voir
+            <b>
+              Juste pour voir
+            </b>
           </button>
         </div>
       </div>

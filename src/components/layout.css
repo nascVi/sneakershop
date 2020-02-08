@@ -32,6 +32,7 @@ h6 {
   font-weight: 900;
   letter-spacing: 0.25rem !important;
 }
+
 .text-yellow {
   color: var(--mainOrange);
 }
