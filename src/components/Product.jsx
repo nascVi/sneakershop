@@ -20,8 +20,11 @@ export default function Product({ product }) {
             data-item-id={product.id}
             data-item-image={product.image.fluid.src}
             data-item-price={product.price}
-            data-item-url="https://shoeso972.netlify.com/"
+            data-item-url="https://shoeso972.netlify.com/maboutique"
             data-item-name={product.title}
+            data-item-description={product.image.description}
+            data-item-custom1-name={product.size}
+            data-item-custom1-options={product.size[0]}
           >
             Plus
           </button>

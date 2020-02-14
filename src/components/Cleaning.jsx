@@ -20,7 +20,7 @@ export default function Cleaning({ cleaning }) {
             data-item-id={cleaning.id}
             data-item-image={cleaning.image.fluid}
             data-item-price={cleaning.price}
-            data-item-url="https://shoeso972.netlify.com/"
+            data-item-url="https://shoeso972.netlify.com/cleaning"
             data-item-name={cleaning.title}
           >
             Instagram 4 now!
