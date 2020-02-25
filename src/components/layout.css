@@ -33,6 +33,30 @@ h6 {
   letter-spacing: 0.25rem !important;
 }
 
+.navbar-brand {
+  display: flex;
+  position: relative;
+}
+
+.nav-link{
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.15rem !important;
+}
+
+.loginbtn {
+  display: flex;
+  font-size: 15px;
+  font-weight: 450;
+  letter-spacing: 0.15rem !important;
+}
+
+.cart {
+  display: flex;
+}
+
+.
+
 .text-yellow {
   color: var(--mainOrange);
 }

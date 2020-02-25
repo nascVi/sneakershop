@@ -16,6 +16,8 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+        // name: `backgrounds`,
+        // path: `${__dirname}/src/bg`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -33,8 +35,8 @@ module.exports = {
       options: {
         apiKey: process.env.SNIPCART_APIKEY,
         autopop: true,
-        js: "https://cdn.snipcart.com/themes/v3.0.7/default/snipcart.js",
-        styles: "https://cdn.snipcart.com/themes/v3.0.7/default/snipcart.css",
+        js: "https://cdn.snipcart.com/themes/v3.0.8/default/snipcart.js",
+        styles: "https://cdn.snipcart.com/themes/v3.0.8/default/snipcart.css",
       },
     },
     `gatsby-plugin-styled-components`,
