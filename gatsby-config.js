@@ -34,9 +34,10 @@ module.exports = {
       resolve: "gatsby-plugin-snipcart",
       options: {
         apiKey: process.env.SNIPCART_APIKEY,
-        autopop: true,
         js: "https://cdn.snipcart.com/themes/v3.0.8/default/snipcart.js",
         styles: "https://cdn.snipcart.com/themes/v3.0.8/default/snipcart.css",
+        autopop: false,
+        credit_cards: ["visa", "mastercard", "amex"],
       },
     },
     `gatsby-plugin-styled-components`,
