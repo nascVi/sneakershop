@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react"
 import { Link } from "gatsby"
-import logo from "../../images/logoLast.svg"
+import logo from "../../images/logo1.svg"
 import { FaShoppingBag } from "react-icons/fa"
 
 import Search from "../search/index"
@@ -86,7 +86,7 @@ export default class Navbar extends Component {
                   </li>*/}
           </div>
           <Link to="/" className="navbar-brand">
-              <img className="img-responsive" src={logo} height="200" width="200" alt="logo" />
+              <img className="img-responsive" src={logo} height="220" width="280" alt="logo" />
           </Link>
           <button
           className="loginbtn btn snipcart-customer-signin"

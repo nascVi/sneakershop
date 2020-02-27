@@ -19,3 +19,5 @@ for the cards or pages Hero
 - webhook see amex? Snipcart.api.configure('credit_cards', [   {'type': 'visa', 'display': 'Visa'},   {'type': 'mastercard', 'display': 'Mastercard'}, {'type': 'amex', 'display': 'Amex'} ])
 - webhook contentful
 - Cart custom design
+- Search optimizer
+- fb Logo to subtitute

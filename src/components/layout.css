@@ -40,8 +40,13 @@ h6 {
   position: relative;
 }
 
+.navbar-nav {
+  margin-left: 20px !important;
+}
+
 .nav-link{
   font-size: 15px;
+  color: var(--mainDark) !important;
   font-weight: 600;
   letter-spacing: 0.15rem !important;
 }
@@ -96,13 +101,14 @@ h6 {
 }
 
 .btn-yellow {
-  border-color: var(--mainKoamaru) !important;
-  color: var(--mainPink) !important;
-  border: 2px;
+  color: var(--mainPink);
+  border-color: var(--mainKoamaru);
+  border: solid 2px;
+  border-radius: 4px;
 }
 
 .btn-yellow:hover {
-  background: var(--mainKoamaru) !important;
+  background: var(--mainKoamaru);
   color: var(--mainYellow) !important;
 }
 .menu,
@@ -149,24 +155,24 @@ h6 {
 
 .footer-Insta-med:hover {
   color: var(--shoesInsta);
-  font-size: 2.8vh;
-  font-weight: 500;
+  font-size: 3.5vh;
+  font-weight: 700;
 }
 
 .footer-Fb-med:hover {
   color: var(--shoesFb);
-  font-size: 2.8vh;
-  font-weight: 500;
+  font-size: 3.5vh;
+  font-weight: 700;
 }
 
 .footer-Git-med:hover {
   color: var(--shoesGit);
-  font-size: 2.8vh;  
-  font-weight: 500;
+  font-size: 3.5vh;  
+  font-weight: 700;
 }
 
 .footer-Wa-med:hover {
   color: var(--shoesWhatsapp);
-  font-size: 2.8vh;
-  font-weight: 500;
+  font-size: 3.5vh;
+  font-weight: 700;
 }
