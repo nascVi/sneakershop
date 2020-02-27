@@ -20,4 +20,4 @@ for the cards or pages Hero
 - webhook contentful
 - Cart custom design
 - Search optimizer
-- fb Logo to subtitute
+* - fb Logo to subtitute

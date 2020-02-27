@@ -40,9 +40,11 @@ h6 {
   position: relative;
 }
 
-.navbar-nav {
-  margin-left: 20px !important;
-}
+/* .navbarCollapse .navbar-nav{
+  margin-left: 2px !important;
+} 
+????????? cf folio
+*/
 
 .nav-link{
   font-size: 15px;
