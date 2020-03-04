@@ -94,7 +94,7 @@ export default class Navbar extends Component {
             Login/Register
           </button>
           <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-checkout col-2" />
-          <Search collapse indices={searchIndices} className="search navbar-search mx-auto col-2" />
+          <Search collapse indices={searchIndices} />
           
         </nav>
     )
