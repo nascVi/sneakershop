@@ -1,7 +1,15 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 
+import { FaShoppingBag } from "react-icons/fa"
+import logo from '../../images/logo1.svg'
 
+import Search from "../search/index"
+
+const searchIndices = [
+  { name: `Items`, title: `Notre stock`, hitComp: `ItemHit` },
+  { name: `Products`, title: `Votre recherche`, hitComp: `ProductHit` },
+]
 export default class Navbar extends Component {
   state = {
     navbarOpen: false,
@@ -78,7 +86,17 @@ export default class Navbar extends Component {
             {/*<li className="nav-item ml-sm-5">
                   </li>*/}
           </div>
-        </nav>
+        <Link to="/" className="navbar-brand">
+          <img src={logo} className="img-responsive" height="220" width="280" alt="logo" />
+        </Link>
+        <button
+          className="loginbtn btn snipcart-customer-signin"
+        > 
+          Login/Register
+        </button>
+        <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-checkout col-2" />
+        <Search collapse indices={searchIndices} />
+      </nav>
     )
   }
 }
