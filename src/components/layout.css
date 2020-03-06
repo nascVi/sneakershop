@@ -110,7 +110,7 @@ h6 {
 }
 
 .btn-yellow:hover {
-  background: var(--mainPink);
+  background: var(--mainDark);
   color: var(--mainGreen) !important;
 }
 .menu,
