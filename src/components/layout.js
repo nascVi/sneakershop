@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-
 import Navbar from "./Globals/Navbar"
 
 import Footer from "./Globals/Footer"
@@ -8,15 +7,17 @@ import "./bootstrap.min.css"
 
 import "./layout.css"
 import "./bootstrap.min.css"
+import ShoesOne from "./Globals/ShoesOne"
 
 const Layout = ({ children }) => (
   <>
     <head>
-  <link
+    <link
         href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&display=swap&subset=greek,latin-ext"
         rel="stylesheet"
       />
     </head>
+    <ShoesOne />
     <Navbar />
     {children}
     <Footer />
