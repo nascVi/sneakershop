@@ -7,7 +7,6 @@ import "./bootstrap.min.css"
 
 import "./layout.css"
 import "./bootstrap.min.css"
-import ShoesOne from "./Globals/ShoesOne"
 
 const Layout = ({ children }) => (
   <>
@@ -17,8 +16,7 @@ const Layout = ({ children }) => (
         rel="stylesheet"
       />
     </head>
-    <ShoesOne />
-    <Navbar />
+    <Navbar className="navbar-fixed-top" />
     {children}
     <Footer />
   </>

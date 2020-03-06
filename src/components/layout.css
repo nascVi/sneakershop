@@ -2,7 +2,7 @@
   --mainFrame: #f4f4f4;
   --mainGrey: #C5C6B6;
   --mainPurple: #512c62;
-  --mainYellow: #fec240;
+  --mainGreen: #058B08;
   --mainKoamaru: #2f375b;
   --mainCerulean: #98c4d1;
   --mainLight: #fffdf9;
@@ -49,7 +49,7 @@ h6 {
 .nav-link{
   font-size: 15px;
   color: var(--mainDark) !important;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.15rem !important;
 }
 
@@ -58,25 +58,25 @@ h6 {
 }
 
 .text-yellow{
-  color: var(--mainYellow) !important;
+  color: var(--mainGreen) !important;
 }
 
 .loginbtn {
   display: flex;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.15rem !important;
 }
 
 .loginbtn:hover {
-  color: var(--mainPink) !important;
+  color: var(--mainGreen) !important;
 }
 
 .cart {
   cursor: pointer;
   display: flex;
-  color: var(--mainPink) !important;
-  font-size: 2rem;
+  color: var(--mainGreen) !important;
+  font-size: 1.7rem;
 }
 
 .search {
@@ -111,7 +111,7 @@ h6 {
 
 .btn-yellow:hover {
   background: var(--mainKoamaru);
-  color: var(--mainYellow) !important;
+  color: var(--mainGreen) !important;
 }
 .menu,
 .cleanings,
