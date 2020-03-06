@@ -123,6 +123,10 @@ h6 {
   font-weight: 700 !important;
 }
 
+.FootLefLeg {
+  text-align: left !important;
+}
+
 .copyrights {
   color: var(--mainCerulean);
 }
@@ -177,4 +181,13 @@ h6 {
   color: var(--shoesWhatsapp);
   font-size: 3.5vh;
   font-weight: 700;
+}
+
+.FootRighLeg {
+  text-align: right !important;
+  color: var(--mainGreen) !important;
+}
+
+.ULContent {
+  text-decoration: none;
 }
