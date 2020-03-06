@@ -39,11 +39,6 @@ export default class Navbar extends Component {
         id: 5,
         path: "/cleanings",
         text: "Cleaning",
-      },
-      {
-        id: 6,
-        path: "/faq",
-        text: "FAQ",
       }
     ],
   }
@@ -62,7 +57,7 @@ export default class Navbar extends Component {
     }
     render() {
       return (
-        <nav className="navbar navbar-expand-md mx-auto navbar-light mt-5">          
+        <nav className="navbar navbar-expand-md mx-auto navbar-light navbar-fixed-top">
           <button
             className="navbar-toggler"
             type="button"

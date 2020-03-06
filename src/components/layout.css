@@ -120,7 +120,7 @@ h6 {
 }
 .footer {
   background: var(--mainDark) !important;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 
 .FootLefLeg {
@@ -155,39 +155,48 @@ h6 {
 
 .footer-soc-meds {
   color: var(--mainFrame);
-  font-size: 2.8vh;
-  font-weight: 500;
+  font-size: 3vh;
 }
 
 .footer-Insta-med:hover {
   color: var(--shoesInsta);
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-weight: 700;
 }
 
 .footer-Fb-med:hover {
   color: var(--shoesFb);
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-weight: 700;
 }
 
 .footer-Git-med:hover {
   color: var(--shoesGit);
-  font-size: 3.5vh;  
+  font-size: 4vh;  
   font-weight: 700;
 }
 
 .footer-Wa-med:hover {
   color: var(--shoesWhatsapp);
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-weight: 700;
 }
 
+.FootCenLeg {
+  padding-top: 1vh;
+  margin-left: 5vh;
+}
+
 .FootRighLeg {
+  color: var(--mainPink) !important;
   text-align: right !important;
-  color: var(--mainGreen) !important;
 }
 
 .ULContent {
-  text-decoration: none;
+  padding-top: 2vh;
+  text-decoration: none !important;
+}
+
+.LSpan {
+  color: var(--mainGreen)!important;
 }

@@ -23,11 +23,27 @@ export default function Footer() {
                         <a href="https://chat.whatsapp.com/K1L90FRUWeBDZqX49OqgMY"><IoLogoWhatsapp className="footer-Wa-med" /></a>
                     </div>
                     </section>
-                    <section className="col FootRighLeg">
+                    <section className="col FootCenLeg">
+
+                        Imagin a Logo
+
+                    </section>
+                    <section className="FootRighLeg">
                         <div className="ULContent">
-                            - <Link to="FAQ">
-                                FAQ
-                            </Link>
+                            <ul>
+                            <li className="row">
+                                <h4>-</h4>
+                                <Link to="faq">
+                                <span>FAQ</span>
+                                </Link>
+                            </li>
+                            <li className="row">
+                                <h4>-</h4>
+                                <Link to="/">
+                                 Leg1 kzsjfmlskrgkqsjfdmklqsjfkldsqj
+                                </Link>
+                            </li>
+                            </ul>
                         </div>
                     </section>
                 </div>
