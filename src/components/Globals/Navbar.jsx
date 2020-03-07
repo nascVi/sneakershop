@@ -89,7 +89,7 @@ export default class Navbar extends Component {
           > 
             Login/Register
           </button>
-        <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-checkout col-2" />
+        <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-checkout col-1" />
         <Search collapse indices={searchIndices} />
       </nav>
     )

@@ -39,8 +39,8 @@ export default function Footer() {
                             </li>
                             <li className="row">
                                 <h4>-</h4>
-                                <Link to="/">
-                                 Leg1 kzsjfmlskrgkqsjfdmklqsjfkldsqj
+                                <Link to="/cgv">
+                                 Conditions générales de vente
                                 </Link>
                             </li>
                             </ul>

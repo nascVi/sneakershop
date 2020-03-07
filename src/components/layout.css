@@ -35,17 +35,6 @@ h6 {
   letter-spacing: 0.25rem !important;
 }
 
-.navbar-brand {
-  display: flex;
-  position: relative;
-}
-
-/* .navbarCollapse .navbar-nav{
-  margin-left: 2px !important;
-} 
-????????? cf folio
-*/
-
 .nav-link{
   font-size: 15px;
   color: var(--mainDark) !important;
