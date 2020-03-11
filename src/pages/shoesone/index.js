@@ -4,7 +4,7 @@ import { /*Link,*/ graphql } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 // import { GiRunningShoe } from "react-icons/gi"
-import BackgroundSection from "../../components/Globals/BackgroundSection"
+import BackgroundSection from "../../components/Globals/BackgroudSection"
 
 import snapcode from "../../images/snapcode.svg"
 import whatsapp from "../../images/WhatsApp.svg"

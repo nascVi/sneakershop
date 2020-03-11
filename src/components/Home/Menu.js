@@ -87,12 +87,12 @@ export default class Menu extends Component {
                     </div>
                     {/*No image?*/}
                     {/*
-                                        <div className="flex-grow-1 px-3">
-                                            <Img
-                                                fluid={node.image}
-                                            />
-                                        </div>
-                                        */}
+                    <div className="flex-grow-1 px-3">
+                        <Img
+                            fluid={node.image}
+                        />
+                    </div>
+                    */}
                   </div>
                 )
               })}

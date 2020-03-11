@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/layout'
-import FAQContent from '../../components/FAQContent'
+import FAQContent from '../../components/FAQ/FAQContent'
 
 export default function componentName() {
     return (

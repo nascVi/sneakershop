@@ -1,5 +1,5 @@
 :root {
-  --mainFrame: #f4f4f4;
+  --mainHeadr: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
   --mainGrey: #C5C6B6;
   --mainPurple: #512c62;
   --mainGreen: #058B08;
@@ -35,10 +35,18 @@ h6 {
   letter-spacing: 0.25rem !important;
 }
 
+/* .navbar-container{
+} */
+
+.navbar {
+  background: var(--mainHeadr) !important;
+  margin-bottom: 1vh;
+}
+
 .nav-link{
-  font-size: 15px;
-  color: var(--mainDark) !important;
-  font-weight: 500;
+  font-size: 12px;
+  color: var(--mainLight) !important;
+  font-weight: 500 !important;
   letter-spacing: 0.15rem !important;
 }
 
@@ -51,10 +59,10 @@ h6 {
 }
 
 .loginbtn {
-  display: flex;
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.15rem !important;
+  color: var(--mainLight)!important;
+  font-size: 11px;
+  font-weight: 450;
+  letter-spacing: 0.10rem !important;
 }
 
 .loginbtn:hover {
@@ -62,14 +70,14 @@ h6 {
 }
 
 .cart {
+  float: left;
   cursor: pointer;
-  display: flex;
-  color: var(--mainGreen) !important;
-  font-size: 1.7rem;
+  color: var(--mainLight) !important;
+  font-size: 2rem;
 }
 
 .search {
-  color: var(--mainPink) !important;
+  color: var(--mainLight) !important;
 }
 
 .about {
@@ -93,13 +101,14 @@ h6 {
 
 .btn-yellow {
   color: var(--mainPink);
+  background: transparent !important;
   border-color: var(--mainKoamaru);
   border: solid 2px;
   border-radius: 4px;
 }
 
 .btn-yellow:hover {
-  background: var(--mainDark);
+  background: transparent !important;
   color: var(--mainGreen) !important;
 }
 .menu,

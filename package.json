@@ -1,38 +1,40 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-mdbreact",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple starter with MDBReact to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "algoliasearch": "^3.35.1",
     "dotenv": "^8.2.0",
-    "gatsby": "^2.10.0",
+    "gatsby": "2.19.34",
     "gatsby-background-image": "^0.9.11",
-    "gatsby-cli": "^2.10.0",
-    "gatsby-image": "^2.2.34",
+    "gatsby-cli": "^2.10.6",
+    "gatsby-image": "2.2.43",
     "gatsby-plugin-algolia": "^0.5.0",
-    "gatsby-plugin-manifest": "^2.2.30",
-    "gatsby-plugin-offline": "^3.0.24",
-    "gatsby-plugin-react-helmet": "^3.1.16",
-    "gatsby-plugin-sharp": "^2.3.4",
+    "gatsby-plugin-manifest": "2.2.45",
+    "gatsby-plugin-offline": "3.0.38",
+    "gatsby-plugin-react-helmet": "3.1.23",
+    "gatsby-plugin-sass": "2.1.30",
+    "gatsby-plugin-sharp": "2.4.8",
     "gatsby-plugin-snipcart": "^1.1.2",
     "gatsby-plugin-styled-components": "^3.1.16",
     "gatsby-source-contentful": "^2.0.28",
-    "gatsby-source-filesystem": "^2.1.39",
-    "gatsby-transformer-sharp": "^2.3.6",
-    "global": "^4.4.0",
+    "gatsby-source-filesystem": "2.1.51",
+    "gatsby-transformer-sharp": "2.3.17",
     "google-map-react": "^1.1.5",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
+    "mdbreact": "4.25.3",
+    "node-sass": "4.13.1",
+    "prop-types": "15.7.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-helmet": "5.2.1",
     "react-icons": "^3.8.0",
     "react-instantsearch-dom": "^6.1.0",
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "1.19.1"
   },
   "keywords": [
     "gatsby"
@@ -45,7 +47,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {
     "type": "git",

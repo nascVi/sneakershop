@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Cleanings from "../../components/Cleanings"
+import Cleanings from "../../components/Cleaning/Cleanings"
 import Layout from "../../components/layout"
 
 export default class cleanings extends Component {

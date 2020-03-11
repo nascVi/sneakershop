@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import Products from "../../components/Products"
-import Cleanings from "../../components/Cleanings"
+import Products from "../../components/Product/Products"
+import Cleanings from "../../components/Cleaning/Cleanings"
 import Layout from "../../components/layout"
 export default class maboutique extends Component {
   render() {

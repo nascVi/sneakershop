@@ -5,9 +5,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Shoes One 972`,
+    title: `ShoesOne972 Gatsby + MDBReact version`,
     description: `Shoes One est un sneakers shop pour les sneakers lovers.`,
-    author: `@lpchamps`,
+    author: `@lpchamps and @zlidev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,6 +22,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -53,7 +54,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `gatsby-starter-mdbreact`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -62,8 +63,9 @@ module.exports = {
         icon: `src/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    // To learn more, visit: https://gatsby.dev/offline
+    `gatsby-plugin-offline`,
   ],
 }
