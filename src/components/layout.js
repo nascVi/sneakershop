@@ -8,7 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Navbar from "./Globals/navbar"
+import Header from "./Globals/Header"
+// import Navbar from "./Globals/navbar"
 import Footer from "./Globals/Footer"
 
 import "./layout.css"
@@ -21,7 +22,8 @@ const Layout = ({ children }) => (
         rel="stylesheet"
       />
     </head>
-    <Navbar />
+    
+    <Header />
     {children}
     <Footer />
   </>

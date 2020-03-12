@@ -22,6 +22,7 @@ const searchIndices = [
 ]
 class Navbar extends Component {
   state = {
+    collapse: false,
     collapse1: false,
     collapseID: '',
     links: [
@@ -63,30 +64,30 @@ class Navbar extends Component {
       [collapseId]: !this.state[collapseId]
     });
   }
+  
 
   render() {
     return (
-      <MDBNavbar color="peach-gradient-rgba">
+      <MDBNavbar className="navbar">
         <MDBContainer className="navbar-container">
-         <MDBHamburgerToggler color="peach-gradient-rgba" id="hamburger3" onClick={()=> this.toggleSingleCollapse('collapse3')} />
+         <MDBHamburgerToggler color="#512c62" id="hamburger3" onClick={()=> this.toggleSingleCollapse('collapse3')} />
           <MDBNavbarBrand>
           <Link to="/" className="navbar-brand">
             <img src={logo} className="img-responsive" height="120" width="190" alt="logo" />
-            {/* Mettre au centre */}
           </Link>
           </MDBNavbarBrand>
           <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-checkout" />
               <button
             className="loginbtn btn snipcart-customer-signin"
           > 
-            Login/Register
+            SignUp/In
           </button>
               <MDBCollapse isOpen={this.state.collapse3} navbar>
                 <MDBNavbarNav left>
                   {this.state.links.map(link => {
                     return (
                       <MDBNavItem key={link.id} className="nav-item" activeClassName="active">
-                    <Link to={link.path} className="nav-link" activeClassName="active">
+                    <Link to={link.path} className="nav-link" activeClassName="waves-effect active">
                       {link.text}
                     </Link>
                 </MDBNavItem>

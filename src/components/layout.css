@@ -1,5 +1,5 @@
 :root {
-  --mainHeadr: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+  --mainHeadr: rgba(252, 248, 249, 0.96); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
   --mainGrey: #C5C6B6;
   --mainPurple: #512c62;
   --mainGreen: #058B08;
@@ -38,14 +38,33 @@ h6 {
 /* .navbar-container{
 } */
 
+.header {
+  position: fixed;
+  width: 100%;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+  z-index: 99;
+}
+
+.header.shadow {
+  box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+
+.header.hidden {
+  transform: translateY(-150%);
+}
+
 .navbar {
   background: var(--mainHeadr) !important;
-  margin-bottom: 1vh;
+}
+
+.hamburger-button{
+  color: var(--mainDark)!important;
 }
 
 .nav-link{
   font-size: 12px;
-  color: var(--mainLight) !important;
+  color: var(--mainDark) !important;
   font-weight: 500 !important;
   letter-spacing: 0.15rem !important;
 }
@@ -59,25 +78,28 @@ h6 {
 }
 
 .loginbtn {
-  color: var(--mainLight)!important;
+  color: var(--mainDark)!important;
   font-size: 11px;
   font-weight: 450;
   letter-spacing: 0.10rem !important;
 }
 
 .loginbtn:hover {
-  color: var(--mainGreen) !important;
+  color: #512c62 !important;
 }
 
 .cart {
+  margin-left: -2vh;
   float: left;
   cursor: pointer;
-  color: var(--mainLight) !important;
+  color: var(--mainPink) !important;
   font-size: 2rem;
 }
 
 .search {
-  color: var(--mainLight) !important;
+  font-size: 11px !important;
+  color: var(--mainDark) !important;
+  text-decoration: none !important;
 }
 
 .about {
@@ -87,6 +109,7 @@ h6 {
 
 .default-background,
 .about-background {
+  width: 100%;
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -114,6 +137,7 @@ h6 {
 .menu,
 .cleanings,
 .contact {
+  width: 100%;
   background: var(--mainTextSec) !important;
 }
 .footer {

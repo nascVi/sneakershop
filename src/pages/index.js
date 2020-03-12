@@ -38,7 +38,7 @@ const IndexPage = ({data}) => (
     <Info />
     <Contact />
     {/* Former JSX */}
-
+{/* 
     <MDBContainer>
       <MDBRow>
         <MDBCol size="auto" md="8">
@@ -76,7 +76,7 @@ const IndexPage = ({data}) => (
           </div>
         </MDBCol>
       </MDBRow>
-    </MDBContainer>
+    </MDBContainer> */}
   </Layout>
 )
 

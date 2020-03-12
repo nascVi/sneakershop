@@ -9,7 +9,7 @@ for the cards or pages Hero
 
 ~ * - Responsive Nav
 * - police des links la nav
-- Images on cleanings and custom sections
+x - Images on cleanings and custom sections
 - slider on home page
 - Edition des mails sur Snipcart
 - Check Contact form mail service
@@ -17,7 +17,7 @@ for the cards or pages Hero
 - Loading products page wheel integration
 - contentful size handle settings
 - webhook see amex? Snipcart.api.configure('credit_cards', [   {'type': 'visa', 'display': 'Visa'},   {'type': 'mastercard', 'display': 'Mastercard'}, {'type': 'amex', 'display': 'Amex'} ])
-- webhook contentful
+* webhook contentful
 - Cart custom design
 - Search optimizer
 * - fb Logo to subtitute
