@@ -7,10 +7,10 @@ compte client?
 * Check Background slider again 
 for the cards or pages Hero
 
-~ * - Responsive Nav
+~ * ? - Responsive Nav, bugg
 * - police des links la nav
-x - Images on cleanings and custom sections
-- slider on home page
+x - Images on cleanings and custom sections(standby pages)
+- slider on home page for brands
 - Edition des mails sur Snipcart
 - Check Contact form mail service
 - Manage proper urls for release.
@@ -21,3 +21,4 @@ x - Images on cleanings and custom sections
 - Cart custom design
 - Search optimizer
 * - fb Logo to subtitute
+- sections SEO optimisation with titles...

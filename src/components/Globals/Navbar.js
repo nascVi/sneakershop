@@ -57,45 +57,46 @@ class Navbar extends Component {
   toggleCollapse = collapseID => () => {
     this.setState(prevState => ({ collapseID: (prevState.collapseID !== collapseID ? collapseID : '') }));
   }
-  
+
   toggleSingleCollapse = collapseId => {
     this.setState({
       ...this.state,
       [collapseId]: !this.state[collapseId]
     });
   }
-  
+
 
   render() {
     return (
-      <MDBNavbar className="navbar">
-        <MDBContainer className="navbar-container">
-         <MDBHamburgerToggler color="#512c62" id="hamburger3" onClick={()=> this.toggleSingleCollapse('collapse3')} />
-          <MDBNavbarBrand>
-          <Link to="/" className="navbar-brand">
-            <img src={logo} className="img-responsive" height="120" width="190" alt="logo" />
-          </Link>
+      <MDBNavbar>
+        <MDBContainer>
+          <MDBHamburgerToggler color="#512c62" id="hamburger3" onClick={() => this.toggleSingleCollapse('collapse3')} />
+          <MDBNavbarBrand className="brandL">
+            <Link to="/" className="navbar-brand">
+              <img src={logo} className="img-responsive" height="150" width="220" alt="logo" />
+            </Link>
           </MDBNavbarBrand>
           <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-checkout" />
-              <button
-            className="loginbtn btn snipcart-customer-signin"
-          > 
+          <button
+            left
+            className="loginbtn btn snipcart-customer-signin text-capitalize"
+          >
             SignUp/In
-          </button>
-              <MDBCollapse isOpen={this.state.collapse3} navbar>
-                <MDBNavbarNav left>
-                  {this.state.links.map(link => {
-                    return (
-                      <MDBNavItem key={link.id} className="nav-item" activeClassName="active">
+            </button>
+          <MDBCollapse isOpen={this.state.collapse3} navbar>
+            <MDBNavbarNav left>
+              {this.state.links.map(link => {
+                return (
+                  <MDBNavItem key={link.id} className="nav-item" className="active">
                     <Link to={link.path} className="nav-link" activeClassName="waves-effect active">
                       {link.text}
                     </Link>
-                </MDBNavItem>
-                  )
-                })}
-              </MDBNavbarNav>
-        <Search collapse indices={searchIndices} />
-            </MDBCollapse>
+                  </MDBNavItem>
+                )
+              })}
+            </MDBNavbarNav>
+            <Search collapse indices={searchIndices} />
+          </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
     )

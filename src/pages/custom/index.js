@@ -1,12 +1,13 @@
 import React from 'react';
 import Layout from "../../components/layout"
+import Title from "../../components/Globals/Title"
 
 export default function custom() {
     return (
         <Layout>
-            <h2>
-                here sit the custom service page
-            </h2>
+            <br />
+            <br />
+            <Title title="here sit the custom service page" />
         </Layout>
     );
 }

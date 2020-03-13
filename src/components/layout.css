@@ -1,13 +1,18 @@
 :root {
-  --mainHeadr: rgba(252, 248, 249, 0.96); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
-  --mainGrey: #C5C6B6;
+  --mainHeadr: rgba(
+    252,
+    248,
+    249,
+    0.96
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --mainGrey: #c5c6b6;
   --mainPurple: #512c62;
-  --mainGreen: #058B08;
+  --mainGreen: #058b08;
   --mainKoamaru: #2f375b;
   --mainCerulean: #98c4d1;
   --mainLight: #fffdf9;
   --mainPink: #de4b43;
-  --mainDark: #3C3530;
+  --mainDark: #3c3530;
   --mainRef: #ffdbc5;
   --mainRefH: #ffbd69;
   --mainRefTs: #d3f4ff;
@@ -20,6 +25,7 @@
 
 body {
   background: var(--mainLight);
+  display: grid;
   color: var(--mainDark);
   font-family: Advent Pro, sans-serif !important;
 }
@@ -40,9 +46,9 @@ h6 {
 
 .header {
   position: fixed;
-  width: 100%;
+  width: 100% !important;
   transform: translateY(0);
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
   z-index: 99;
 }
 
@@ -58,14 +64,22 @@ h6 {
   background: var(--mainHeadr) !important;
 }
 
-.hamburger-button{
-  color: var(--mainDark)!important;
+.hamburger-button {
+  color: var(--mainDark) !important;
 }
 
-.nav-link{
-  font-size: 12px;
+.brandL {
+  padding-top: -80px;
+  margin-top: -30px;
+  margin-left: -5%;
+  margin-right: -8.6%;
+  margin-bottom: -50px;
+  padding-bottom: 30px;
+}
+
+.nav-link {
+  font-size: 14px;
   color: var(--mainDark) !important;
-  font-weight: 500 !important;
   letter-spacing: 0.15rem !important;
 }
 
@@ -73,15 +87,14 @@ h6 {
   color: var(--mainPink) !important;
 }
 
-.text-yellow{
+.text-yellow {
   color: var(--mainGreen) !important;
 }
 
 .loginbtn {
-  color: var(--mainDark)!important;
-  font-size: 11px;
-  font-weight: 450;
-  letter-spacing: 0.10rem !important;
+  color: var(--mainDark) !important;
+  font-size: 12px;
+  letter-spacing: 0.15rem !important;
 }
 
 .loginbtn:hover {
@@ -89,8 +102,7 @@ h6 {
 }
 
 .cart {
-  margin-left: -2vh;
-  float: left;
+  float: right;
   cursor: pointer;
   color: var(--mainPink) !important;
   font-size: 2rem;
@@ -109,8 +121,7 @@ h6 {
 
 .default-background,
 .about-background {
-  width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,22 +129,19 @@ h6 {
   background-position: center;
   background-size: cover;
 }
-.about-background {
-  min-height: 60vh;
-}
 
 .btn-yellow {
+  background: white !important;
   color: var(--mainPink);
-  background: transparent !important;
-  border-color: var(--mainKoamaru);
   border: solid 2px;
   border-radius: 4px;
 }
 
 .btn-yellow:hover {
-  background: transparent !important;
+  background: white !important;
   color: var(--mainGreen) !important;
 }
+
 .menu,
 .cleanings,
 .contact {
@@ -146,6 +154,8 @@ h6 {
 }
 
 .FootLefLeg {
+  font-size: 12px !important;
+  color: var(--mainGreen);
   text-align: left !important;
 }
 
@@ -168,7 +178,7 @@ h6 {
   color: var(--mainRefH) !important;
 }
 .footer-link-ts {
-  color: var(--mainFrame)!important;
+  color: var(--mainFrame) !important;
 }
 
 .footer a {
@@ -176,49 +186,51 @@ h6 {
 }
 
 .footer-soc-meds {
-  color: var(--mainFrame);
-  font-size: 3vh;
+  color: var(--mainGreen) !important;
+  font-size: 3vh !important;
 }
 
 .footer-Insta-med:hover {
   color: var(--shoesInsta);
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: 700;
 }
 
 .footer-Fb-med:hover {
   color: var(--shoesFb);
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: 700;
 }
 
 .footer-Git-med:hover {
   color: var(--shoesGit);
-  font-size: 4vh;  
+  font-size: 3vh;
   font-weight: 700;
 }
 
 .footer-Wa-med:hover {
   color: var(--shoesWhatsapp);
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: 700;
 }
 
 .FootCenLeg {
-  padding-top: 1vh;
-  margin-left: 5vh;
+  padding-top: 1vh !important;
+  margin-left: 5vh !important;
 }
 
 .FootRighLeg {
   color: var(--mainPink) !important;
-  text-align: right !important;
 }
 
-.ULContent {
-  padding-top: 2vh;
-  text-decoration: none !important;
+.FContent {
+  margin-left: auto !important;
+}
+
+.FLogo {
+  margin-top: -3% !important;
 }
 
 .LSpan {
-  color: var(--mainGreen)!important;
+  color: var(--mainGreen) !important;
 }

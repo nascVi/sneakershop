@@ -7,8 +7,8 @@ function Header() {
   const [shouldHideHeader, setShouldHideHeader] = useState(false);
   const [shouldShowShadow, setShouldShowShadow] = useState(false);
 
-  const MINIMUM_SCROLL = 80;
-  const TIMEOUT_DELAY = 400;
+  const MINIMUM_SCROLL = 5;
+  const TIMEOUT_DELAY = 300;
 
   useDocumentScrollThrottled(callbackData => {
     const { previousScrollTop, currentScrollTop } = callbackData;
@@ -27,9 +27,9 @@ function Header() {
 
   return (
     <header className={`header ${shadowStyle} ${hiddenStyle}`} >
-        <Navbar />
+      <Navbar />
     </header>
-    )
+  )
 }
 
 export default Header;

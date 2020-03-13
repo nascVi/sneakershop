@@ -55,7 +55,7 @@ export default class Menu extends Component {
                       }}
                     >
                       <b>
-                      {category}
+                        {category}
                       </b>
                     </button>
                   )
@@ -77,7 +77,7 @@ export default class Menu extends Component {
                       </div>
                       <br />
                       <p>
-                        <normal>{node.description.description}</normal>
+                        {node.description.description}
                       </p>
                       <div className="d-flex justify-content-between">
                         <h6 className="mb-0">{node.size[0]}</h6>

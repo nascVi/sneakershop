@@ -5,11 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 
 import Header from "./Globals/Header"
-// import Navbar from "./Globals/navbar"
 import Footer from "./Globals/Footer"
 
 import "./layout.css"
@@ -22,7 +21,6 @@ const Layout = ({ children }) => (
         rel="stylesheet"
       />
     </head>
-    
     <Header />
     {children}
     <Footer />
