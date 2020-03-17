@@ -28,6 +28,9 @@ body {
   display: grid;
   color: var(--mainDark);
   font-family: Advent Pro, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 h1,
