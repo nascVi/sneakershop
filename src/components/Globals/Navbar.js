@@ -87,7 +87,7 @@ class Navbar extends Component {
             <MDBNavbarNav left>
               {this.state.links.map(link => {
                 return (
-                  <MDBNavItem key={link.id} className="nav-item" className="active">
+                  <MDBNavItem key={link.id} className="nav-item">
                     <Link to={link.path} className="nav-link" activeClassName="waves-effect active">
                       {link.text}
                     </Link>
