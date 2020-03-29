@@ -10,7 +10,7 @@ import logo from '../../images/logo.svg'
 
 const Footer = () => {
     return (
-        <MDBFooter color="black" className="footer font-small pt-4 mt-4">
+        <MDBFooter color="black" className="footer font-small mt-1">
             <br />
             <MDBContainer fluid className="container text-center text-md-left">
                 <MDBRow className="FContent">
@@ -43,6 +43,7 @@ const Footer = () => {
                         </div>
                     </MDBCol>
                 </MDBRow>
+            <br />
             </MDBContainer>
             <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid>
