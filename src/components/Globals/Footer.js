@@ -15,7 +15,9 @@ const Footer = () => {
             <MDBContainer fluid className="container text-center text-md-left">
                 <MDBRow className="FContent">
                     <MDBCol className="FLogo" md="3">
-                        <img src={logo} width="180" heihgt="110" />
+                        <Link to="/">
+                            <img src={logo} width="180" heihgt="110" />
+                        </Link>
                     </MDBCol>
                     <MDBCol className="footer-soc-meds" md="5">
                         <h5 className="title">Nous sommes aussi @:</h5>
