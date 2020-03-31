@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import { Link } from "gatsby"
 import {
   MDBContainer,
@@ -8,6 +8,7 @@ import {
   MDBCol,
   MDBBadge,
 } from "mdbreact"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,55 +23,53 @@ import Contact from "../components/Home/Contact"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Accueil" keywords={[`gatsby`, `application`, `react`]} />
-    {/* <GiRunningShoe /> */}
-    {/* <Jumbotron /> */}
-
-    {/* Former JSX */}
-    <BackgroundSection
-      img={data.img.childImageSharp.fluid}
-      title="shoesone972.com"
-      styleClass="default-background"
-      display="inherit"
-    />
-    <Brands brands={data.brands} />
-    <Menu items={data.menu} />
-    <Info />
-    <Contact />
+  <SEO title="Accueil" keywords={[`gatsby`, `application`, `react`]} />
+   <div>
+      <BackgroundSection
+         img={data.img.childImageSharp.fluid}
+         title="shoesone972.com"
+         styleClass="default-background"
+         display="inherit"
+      />
+      <Brands brands={data.brands} />
+      <Menu items={data.menu} />
+      <Info />
+      <Contact />
+   </div>
   </Layout>
 )
 
 export const query = graphql`
-  query {
-    img: file(relativePath: { eq: "sneakersC.png" }) {
-      childImageSharp {
-        fluid(maxHeight: 2000) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
+query {
+  img: file(relativePath: { eq: "sneakersC.png" }) {
+    childImageSharp {
+      fluid(maxHeight: 2000) {
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
+  }
 
-    menu: allContentfulShoesOneItem {
-      edges {
-        node {
+  menu: allContentfulShoesOneItem {
+    edges {
+      node {
+        id
+        title
+        size
+        description {
           id
-          title
-          size
-          description {
-            id
-            description
-          }
-          price
-          category
-          image {
-            fluid(maxHeight: 15) {
-              ...GatsbyContentfulFluid_tracedSVG
-            }
+          description
+        }
+        price
+        category
+        image {
+          fluid(maxHeight: 15) {
+            ...GatsbyContentfulFluid_tracedSVG
           }
         }
       }
     }
   }
+}
 `
 
 export default IndexPage

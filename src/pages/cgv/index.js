@@ -4,7 +4,7 @@ import Title from '../../components/Globals/Title'
 
 import CGVContent from '../../components/CGV/CGVContent'
 
-export default function index() {
+export default function cgv() {
     return (
         <Layout>
             <br />
