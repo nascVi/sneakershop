@@ -6,7 +6,8 @@ export default function Product({ product }) {
   return (
     <div className="col-10 col-sm-8 col-6 col-lg-4 mx-auto my-3">
       <div className="card" style={{ minHeight: "100%" }}>
-        <Link href="/maboutique/${product.title}" className="image-link">
+        <Link href="/maboutique" className="image-link">
+          {/* See about ${product.title} typo  */}
           <Img fluid={product.image.fluid} className="card-img-top" />
         </Link>
         <div className="card-body text-center">

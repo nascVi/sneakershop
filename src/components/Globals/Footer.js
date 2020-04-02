@@ -15,11 +15,11 @@ const Footer = () => {
             <MDBContainer fluid className="container text-center text-md-left">
                 <MDBRow className="FContent">
                     <MDBCol className="FLogo" md="3">
-                        <Link to="/">
-                            <img src={logo} width="180" heihgt="110" />
+                        <Link to="/shoesone">
+                            <img src={logo} width="180" heihgt="110" alt="brand" />
                         </Link>
                     </MDBCol>
-                    <MDBCol className="footer-soc-meds" md="5">
+                    <MDBCol className="FootCenLeg footer-soc-meds" md="5">
                         <h5 className="title">Nous sommes aussi @:</h5>
                         <a href="https://www.facebook.com/shoesone972"><IoLogoFacebook className="footer-Fb-med  mr-3" /></a>
                         <a href="https://www.instagram.com/shoesone972"><IoLogoInstagram className="footer-Insta-med mr-3" /></a>

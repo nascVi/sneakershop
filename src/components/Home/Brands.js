@@ -42,7 +42,6 @@ export default function Brands() {
               initiallyVisible={false}
               >
               <Title title="Notre choix des marques" />
-              >
               </ScrollAnimation>
               <div className="row">
                 {data.brands.edges.map(({ node: brand }) => {

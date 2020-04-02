@@ -5,28 +5,47 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 
 import Header from "./Globals/Header"
 import Footer from "./Globals/Footer"
 
+import { useScrollToTop } from './hooks/scrollToTop';
 import "./layout.css"
 
-const Layout = ({ children }) => (
-  <>
-    <head>
-      <link
-        href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&display=swap&subset=greek,latin-ext"
-        rel="stylesheet"
-      />
-    </head>
-    <Header />
-    {children}
-    <Footer />
-  </>
+
+const Layout = ({ children }, props) => {   
+  const setScrollToTop = useScrollToTop(true)
+  return (
+    <>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700&display=swap&subset=greek,latin-ext"
+          rel="stylesheet"
+        />
+      </head>
+      <Header />
+ 
+      {children}
+
+     <div className="LscrollTopdiv"
+        key={props}
+        onClick={() => setScrollToTop(true)}
+        >
+        <button className="LscrollTopBtn">
+          <div>^</div>
+          backHautLock!
+        </button>
+      </div>
+     <div className="LscrollDiv">
+      <Footer />
+     </div>
+      
+    </>
 )
 
+}
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }

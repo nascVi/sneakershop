@@ -195,40 +195,31 @@ h6 {
 
 .footer-soc-meds {
   color: var(--mainGreen) !important;
-  font-size: 3vh !important;
+  font-size: 4vh !important;
 }
 
 .footer-Insta-med:hover {
   color: var(--shoesInsta);
-  font-size: 3vh;
+  font-size: 5vh;
   font-weight: 700;
 }
 
 .footer-Fb-med:hover {
   color: var(--shoesFb);
-  font-size: 3vh;
+  font-size: 5vh;
   font-weight: 700;
 }
 
 .footer-Git-med:hover {
   color: var(--shoesGit);
-  font-size: 3vh;
+  font-size: 5vh;
   font-weight: 700;
 }
 
 .footer-Wa-med:hover {
   color: var(--shoesWhatsapp);
-  font-size: 3vh;
+  font-size: 5vh;
   font-weight: 700;
-}
-
-.FootCenLeg {
-  padding-top: 1vh !important;
-  margin-left: 5vh !important;
-}
-
-.FootRighLeg {
-  color: var(--mainPink) !important;
 }
 
 .FContent {
@@ -236,9 +227,58 @@ h6 {
 }
 
 .FLogo {
-  margin-top: -3% !important;
+  margin-top: -2vh !important;
 }
 
-.LSpan {
-  color: var(--mainGreen) !important;
+.FootCenLeg {
+  margin-top: 2vh !important;
+}
+
+.FootRighLeg {
+  margin-top: 2vh !important;
+  color: var(--mainPink) !important;
+}
+
+.LscrollDiv {
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+.LscrollTopdiv {
+  position: relative !important;
+  bottom: 20px !important;
+  left: 40% !important;
+  margin-left: -50px !important;
+  z-index: 2 !important;
+  cursor: pointer !important;
+  opacity: 0.4 !important;
+  text-align: center !important;
+}
+
+.LscrollTopdiv:hover {
+  opacity: 0.7 !important;
+  animation: wiggle 1s ease !important;
+  animation-iteration-count: 1 !important;
+}
+
+@keyframes wiggle {
+20% { transform: translateY(6px) !important; }
+40% { transform: translateY(-6px) !important; }
+60% { transform: translateY(4px) !important; }
+80% { transform: translateY(-2px) !important; }
+100% { transform: translateY(0) !important; }                        
+}
+
+.LscrollTopBtn {
+  position: relative !important;
+  background: black !important;
+  color: white !important;
+  font-family: Teko !important;
+  font-size: 9px !important;
+  line-height: 20px !important;
+  border-radius: 4px !important;
+  width: 100px !important;
+  padding-top: -20px !important;
 }
