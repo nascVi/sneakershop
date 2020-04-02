@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { throttle } from 'lodash';
+// import reacthooks/ 
 
 function useDocumentScrollThrottled(callback) {
   const [, setScrollPosition] = useState(0);
@@ -25,7 +26,7 @@ function useDocumentScrollThrottled(callback) {
 
     return () =>
       window.removeEventListener('scroll', handleDocumentScrollThrottled);
-  }, []);
+  }, [handleDocumentScrollThrottled]);
 }
 
 

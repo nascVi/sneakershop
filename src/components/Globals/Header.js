@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import Navbar from './Navbar';
-import useDocumentScrollThrottled from '../../hooks/useDocumentScrollThrottled';
+import useDocumentScrollThrottled from '../hooks/useDocumentScrollThrottled';
 
 function Header() {
   const [shouldHideHeader, setShouldHideHeader] = useState(false);
