@@ -6,18 +6,24 @@ import { IoLogoInstagram } from "react-icons/io"
 import { IoLogoGithub } from "react-icons/io"
 import { IoLogoWhatsapp } from "react-icons/io"
 import { Link } from "gatsby"
+
+import { useScrollToTop } from '../hooks/scrollToTop';
 import logo from '../../images/logo.svg'
 
-const Footer = () => {
+const Footer = (props) => {
+    const setScrollToTop = useScrollToTop(true);
     return (
         <MDBFooter color="black" className="footer font-small mt-1">
             <br />
             <MDBContainer fluid className="container text-center text-md-left">
                 <MDBRow className="FContent">
                     <MDBCol className="FLogo" md="3">
-                        <Link to="/shoesone">
+                        <div
+                            key={props}
+                            onClick={() => setScrollToTop(true)}
+                        >
                             <img src={logo} width="180" heihgt="110" alt="brand" />
-                        </Link>
+                        </div>
                     </MDBCol>
                     <MDBCol className="FootCenLeg footer-soc-meds" md="5">
                         <h5 className="title">Nous sommes aussi @:</h5>
@@ -43,7 +49,7 @@ const Footer = () => {
                         </div>
                     </MDBCol>
                 </MDBRow>
-            <br />
+                <br />
             </MDBContainer>
             <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid>

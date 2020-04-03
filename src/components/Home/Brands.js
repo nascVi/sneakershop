@@ -37,11 +37,11 @@ export default function Brands() {
           <section className="py-5">
             <div className="container">
               <ScrollAnimation
-              animateIn="fadeIn"
-              animateOnce={true}
-              initiallyVisible={false}
+                animateIn="fadeIn"
+                animateOnce={true}
+                initiallyVisible={false}
               >
-              <Title title="Notre choix des marques" />
+                <Title title="Notre choix des marques" />
               </ScrollAnimation>
               <div className="row">
                 {data.brands.edges.map(({ node: brand }) => {

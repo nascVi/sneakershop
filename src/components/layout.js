@@ -15,7 +15,7 @@ import { useScrollToTop } from './hooks/scrollToTop';
 import "./layout.css"
 
 
-const Layout = ({ children }, props) => {   
+const Layout = ({ children }, props) => {
   const setScrollToTop = useScrollToTop(true)
   return (
     <>
@@ -26,24 +26,22 @@ const Layout = ({ children }, props) => {
         />
       </head>
       <Header />
- 
-      {children}
 
-     <div className="LscrollTopdiv"
+      {children}
+      <div className="LscrollTopdiv"
         key={props}
         onClick={() => setScrollToTop(true)}
-        >
+      >
         <button className="LscrollTopBtn">
-          <div>^</div>
-          backHautLock!
-        </button>
+          <div className="LscrollArrow">⬆</div>
+                backHautLock!
+              </button>
       </div>
-     <div className="LscrollDiv">
+
       <Footer />
-     </div>
-      
+
     </>
-)
+  )
 
 }
 Layout.propTypes = {
