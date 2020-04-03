@@ -236,16 +236,23 @@ h6 {
 }
 
 .LscrollArrow {
-  color: var(--mainGreen) !important;
+  margin-top: 10px !important;
+  position: relative !important;
+  color: var(--mainLight) !important;
+  font-family: "Advent Pro", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 800;
+  opacity: 0.9 !important;
 }
 
 .LscrollTopdiv {
-  margin-top: -80px !important;
+  margin-top: -100px !important;
   position: sticky !important;
+  border: none !important;
   z-index: 2 !important;
   cursor: pointer !important;
   opacity: 0.8 !important;
-  margin-right: 80px;
+  margin-right: 80px; 
   margin-bottom: 50px;
   text-align: right !important;
   animation: wiggle 1s ease;
@@ -254,6 +261,7 @@ h6 {
 
 .LscrollTopdiv:hover {
   opacity: 1 !important;
+  color: var(--mainPink) !important;
 }
 
 @keyframes wiggle {
@@ -279,13 +287,16 @@ h6 {
   position: relative !important;
   color: var(--mainLight) !important;
   font-family: "Advent Pro", sans-serif !important;
-  font-size: 14px !important;
+  font-size: 12px !important;
   font-weight: 800;
-  line-height: 15px !important;
+  line-height: 10px !important;
   border-radius: 4px !important;
+  padding-bottom: 10px!important;
   width: 100px !important;
+  border-color: transparent !important;
 }
 
 .LscrollTopBtn:hover {
-  border-color: var(--mainGreen);
+  border-color: transparent !important;
+  color: var(--mainPink) !important;
 }

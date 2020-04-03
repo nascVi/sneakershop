@@ -33,7 +33,7 @@ const Layout = ({ children }, props) => {
         onClick={() => setScrollToTop(true)}
       >
         <button className="LscrollTopBtn">
-          <div className="LscrollArrow">⬆</div>
+        <div className="LscrollArrow">^</div>
                 backHautLock!
               </button>
       </div>
