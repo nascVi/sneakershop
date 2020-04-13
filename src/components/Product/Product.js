@@ -17,6 +17,7 @@ export default function Product({ product }) {
             <h6>{product.size}</h6>
           </div>
           <button
+            classId="snipcart-main-container"
             className="btn btn-yellow mt-3 text-capitalize snipcart-overwrite snipcart-add-item snipcart-customer-signin font-weight-bold"
             data-item-id={product.id}
             data-item-image={product.image.fluid.src}

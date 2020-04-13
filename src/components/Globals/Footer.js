@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBListGroup, MDBListGroupItem } from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBListGroup } from "mdbreact";
 
 import { IoLogoFacebook } from "react-icons/io"
 import { IoLogoInstagram } from "react-icons/io"
@@ -10,6 +10,8 @@ import { Link } from "gatsby"
 import { useScrollToTop } from '../hooks/scrollToTop';
 import logo from '../../images/logo.svg'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 const Footer = (props) => {
     const setScrollToTop = useScrollToTop(true);
     return (
@@ -18,15 +20,19 @@ const Footer = (props) => {
             <MDBContainer fluid className="container text-center text-md-left">
                 <MDBRow className="FContent">
                     <MDBCol className="FLogo" md="3">
-                        <div
-                            key={props}
-                            onClick={() => setScrollToTop(true)}
-                        >
-                            <img src={logo} width="180" heihgt="110" alt="brand" />
-                        </div>
+                            <div
+                                className="LscrollTopdiv LscrollArrow"
+                                key={props}
+                                onClick={() => setScrollToTop(true)}
+                                >
+                                <ScrollAnimation animateIn='bounceInRight'>
+                                <img src={logo} width="160" heihgt="90" alt="brand" />
+                                ™
+                                </ScrollAnimation>
+                            </div>
                     </MDBCol>
                     <MDBCol className="FootCenLeg footer-soc-meds" md="5">
-                        <h5 className="title">Nous sommes aussi @:</h5>
+                        <h5 className="title">Nous sommes aussi @</h5>
                         <a href="https://www.facebook.com/shoesone972"><IoLogoFacebook className="footer-Fb-med  mr-3" /></a>
                         <a href="https://www.instagram.com/shoesone972"><IoLogoInstagram className="footer-Insta-med mr-3" /></a>
                         <a href="https://github.com/nascVi/sneakershop"><IoLogoGithub className="footer-Git-med mr-3" /></a>
@@ -35,18 +41,17 @@ const Footer = (props) => {
                         <br />
                     </MDBCol>
                     <MDBCol md="4" className="FootRighLeg">
-                        <h5 className="title">Liens Pratiques</h5>
-                        <div>
-                            <MDBListGroup>
+                        <h5 className="title">Liens Pratiques</h5>                        
+                            <MDBListGroup className="FootRightLi">
                                 <Link to="/faq">
-                                    FAQ
-                            </Link>
+                                    - FAQ
+                                </Link>
                                 <Link to="/cgv">
-                                    Conditions Générales de vente
-                            </Link>
+                                    - Conditions Générales de vente
+                                </Link>
                                 <br />
                             </MDBListGroup>
-                        </div>
+                        
                     </MDBCol>
                 </MDBRow>
                 <br />

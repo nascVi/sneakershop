@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Title from "../Globals/Title"
-import Brand from "./Brand"
+// import Brand from "./Brand"
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const getBrands = graphql`
@@ -45,7 +45,6 @@ export default function Brands() {
               </ScrollAnimation>
               <div className="row">
                 {data.brands.edges.map(({ node: brand }) => {
-                  return <Brand key={brand.id} brand={brand} />
                 })}
               </div>
             </div>

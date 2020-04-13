@@ -158,11 +158,11 @@ h6 {
 }
 .footer {
   background: var(--mainLinear) !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 .FootLefLeg {
-  font-size: 12px !important;
+  font-size: 10px !important;
   color: var(--mainGreen);
   text-align: left !important;
 }
@@ -177,7 +177,7 @@ h6 {
 
 .footer-brand:hover {
   cursor: pointer;
-  color: var(--mainPink);
+  color: var(--mainRef);
 }
 .footer-link {
   color: var(--mainRefTs) !important;
@@ -194,30 +194,46 @@ h6 {
 }
 
 .footer-soc-meds {
-  color: var(--mainGreen) !important;
+  color: var(--mainRef) !important;
   font-size: 4vh !important;
 }
+/* 
+.footer-Insta-med {
+  color: var(--mainPurple) !important;
+}
+
+.footer-Git-med {
+  color: var(--mainPurple) !important;
+}
+
+.footer-Wa-med {
+  color: var(--mainPurple) !important;
+}
+
+.footer-Fb-med {
+  color: var(--mainPurple) !important;
+} */
 
 .footer-Insta-med:hover {
-  color: var(--shoesInsta);
+  color: var(--shoesInsta) !important;
   font-size: 5vh;
   font-weight: 700;
 }
 
 .footer-Fb-med:hover {
-  color: var(--shoesFb);
+  color: var(--shoesFb)!important;
   font-size: 5vh;
   font-weight: 700;
 }
 
 .footer-Git-med:hover {
-  color: var(--shoesGit);
+  color: var(--shoesGit)!important;
   font-size: 5vh;
   font-weight: 700;
 }
 
 .footer-Wa-med:hover {
-  color: var(--shoesWhatsapp);
+  color: var(--shoesWhatsapp)!important;
   font-size: 5vh;
   font-weight: 700;
 }
@@ -232,37 +248,41 @@ h6 {
 
 .FootRighLeg {
   margin-top: 2vh !important;
-  color: var(--mainPink) !important;
+  color: var(--mainRef) !important;
+  margin-bottom: 4vh;
+}
+
+.FootRightLi {
+  color: var(--mainPurple)!important;
+  font-weight: 600;
+}
+
+.FootRightLi:hover {
+  color: var(--mainPink)!important;
+  font-weight: 600;
 }
 
 .LscrollArrow {
-  margin-top: 10px !important;
   position: relative !important;
-  color: var(--mainLight) !important;
+  color: var(--mainDark) !important;
   font-family: "Advent Pro", sans-serif !important;
-  font-size: 18px !important;
-  font-weight: 800;
-  opacity: 0.9 !important;
+  font-size: 30px !important;
+  font-weight: 280;
 }
 
 .LscrollTopdiv {
-  margin-top: -100px !important;
   position: sticky !important;
   border: none !important;
   z-index: 2 !important;
   cursor: pointer !important;
-  opacity: 0.8 !important;
-  margin-right: 80px;
-  margin-bottom: 50px;
-  text-align: right !important;
   animation: wiggle 1s ease;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
 }
 
-.LscrollTopdiv:hover {
+/* .LscrollTopdiv:hover {
   opacity: 1 !important;
   color: var(--mainPink) !important;
-}
+} */
 
 @keyframes wiggle {
   20% {
@@ -282,8 +302,7 @@ h6 {
   }
 }
 
-.LscrollTopBtn {
-  background: var(--mainDark) !important;
+/* .LscrollTopBtn {
   position: relative !important;
   color: var(--mainLight) !important;
   font-family: "Advent Pro", sans-serif !important;
@@ -294,12 +313,12 @@ h6 {
   padding-bottom: 10px!important;
   width: 100px !important;
   border-color: transparent !important;
-}
+} */
 
-.LscrollTopBtn:hover {
+/* .LscrollTopBtn:hover {
   border-color: transparent !important;
   color: var(--mainPink) !important;
-}
+} */
 
 /* Change the style of every button */
 .snipcart-overwrite #snipcart-main-container a.snipcart-btn {
