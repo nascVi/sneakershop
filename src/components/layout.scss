@@ -29,6 +29,12 @@
   --shoesWhatsapp: #dcf8c6;
 }
 
+// DEVICES VARIABLES
+$large: "only screen and (max-width: 1370px)";
+$medium: "only screen and (max-width: 768px)";
+$small: "only screen and (max-width: 430px)";
+
+
 body {
   background: var(--mainLight);
   display: grid;
@@ -73,7 +79,17 @@ h6 {
 }
 
 .hamburger-button {
-  color: var(--mainDark) !important;
+  color: var(--mainGreen) !important;
+
+  @media #{$small} {
+    width: 120px !important;
+    height: 50px !important;
+  }
+
+  @media #{$medium} {
+    width: 170px !important;
+    height: 100px !important;
+  }
 }
 
 .brandL {
@@ -83,6 +99,19 @@ h6 {
   margin-right: -8.6%;
   margin-bottom: -50px;
   padding-bottom: 30px;
+
+}
+
+.img-responsive {
+  @media #{$small} {
+    width: 120px ;
+    height: 50px ;
+  }
+
+  @media #{$medium} {
+    width: 170px ;
+    height: 100px ;
+  }
 }
 
 .nav-link {
@@ -133,7 +162,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgb(251, 91, 90, 0.5), rgb(251, 91, 90));
+  background: linear-gradient(rgba(251, 91, 90, 0.5), rgba(251, 91, 90, 1));
   background-position: center;
   background-size: cover;
 }
@@ -333,6 +362,7 @@ h6 {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
+  z-index: 99 !important;
 }
 
 /* Change the style of the primary buttons */

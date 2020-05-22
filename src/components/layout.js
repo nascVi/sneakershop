@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 import Header from "./Globals/Header"
 import Footer from "./Globals/Footer"
 
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   return (

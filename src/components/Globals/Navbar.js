@@ -2,15 +2,16 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 
 import { Link } from "gatsby"
-import {
-  MDBNavbar,
-  MDBNavbarBrand,
-  MDBNavbarNav,
-  MDBNavItem,
-  MDBHamburgerToggler,
-  MDBCollapse,
-  MDBContainer,
-} from "mdbreact"
+
+// import {
+//   MDBNavbar,
+//   MDBNavbarBrand,
+//   MDBNavbarNav,
+//   MDBNavItem,
+//   MDBHamburgerToggler,
+//   MDBCollapse,
+//   MDBContainer,
+// } from "mdbreact"
 
 import logo from '../../images/logo.svg'
 import { FaShoppingBag } from "react-icons/fa"
@@ -68,37 +69,37 @@ class Navbar extends Component {
 
   render() {
     return (
-      <MDBNavbar>
-        <MDBContainer>
-          <MDBHamburgerToggler color="#512c62" id="hamburger3" onClick={() => this.toggleSingleCollapse('collapse3')} />
-          <MDBNavbarBrand className="brandL">
+      <>
+        <div>
+          <a color="#512c62" id="hamburger3" onClick={() => this.toggleSingleCollapse('collapse3')} />
+          <div className="brandL">
             <Link to="/" className="navbar-brand">
               <img src={logo} className="img-responsive" height="150" width="220" alt="logo" />
             </Link>
-          </MDBNavbarBrand>
-          <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-checkout" />
+          </div>
+          <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-overwrite" />
           <button
             left
             className="loginbtn btn snipcart-customer-signin text-capitalize"
           >
             SignUp/In
             </button>
-          <MDBCollapse isOpen={this.state.collapse3} navbar>
-            <MDBNavbarNav left>
+          <div isOpen={this.state.collapse3} navbar>
+            <div left>
               {this.state.links.map(link => {
                 return (
-                  <MDBNavItem key={link.id} className="nav-item">
+                  <div key={link.id} className="nav-item">
                     <Link to={link.path} className="nav-link" activeClassName="waves-effect active">
                       {link.text}
                     </Link>
-                  </MDBNavItem>
+                  </div>
                 )
               })}
-            </MDBNavbarNav>
+            </div>
             <Search collapse indices={searchIndices} />
-          </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar>
+          </div>
+        </div>
+      </>
     )
   }
 }
