@@ -14,7 +14,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // former version  imports
-import { /*StaticQuery,*/ graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import BackgroundSection from "../components/Globals/BackgroudSection"
 import Info from "../components/Home/Info"
 import Menu from "../components/Home/Menu"

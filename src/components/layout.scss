@@ -190,6 +190,10 @@ h6 {
   font-weight: 400 !important;
 }
 
+.FLogo {
+  margin-left: 0;
+}
+
 .FootLefLeg {
   font-size: 10px !important;
   color: var(--mainGreen);
@@ -256,7 +260,7 @@ h6 {
 }
 
 .footer-Git-med:hover {
-  color: var(--shoesGit)!important;
+  color: var(--mainDark)!important;
   font-size: 5vh;
   font-weight: 700;
 }

@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 
+import HamburgerElastic from '../Globals/thisam/HamburgerElastic'
+
 import { Link } from "gatsby"
 
 // import {
@@ -13,7 +15,7 @@ import { Link } from "gatsby"
 //   MDBContainer,
 // } from "mdbreact"
 
-import logo from '../../images/logo.svg'
+import logo from '../../images/logo.png'
 import { FaShoppingBag } from "react-icons/fa"
 import Search from "../search/index"
 
@@ -23,9 +25,7 @@ const searchIndices = [
 ]
 class Navbar extends Component {
   state = {
-    collapse: false,
-    collapse1: false,
-    collapseID: '',
+    showSideBar: false,
     links: [
       {
         id: 1,
@@ -55,6 +55,11 @@ class Navbar extends Component {
     ],
   }
 
+  showSideBar = () => {
+    const { showSideBar } = this.state;
+    this.setState({ showSideBar: !showSideBar });
+  }
+
   toggleCollapse = collapseID => () => {
     this.setState(prevState => ({ collapseID: (prevState.collapseID !== collapseID ? collapseID : '') }));
   }
@@ -71,10 +76,10 @@ class Navbar extends Component {
     return (
       <>
         <div>
-          <a color="#512c62" id="hamburger3" onClick={() => this.toggleSingleCollapse('collapse3')} />
+        <HamburgerElastic onClick={this.showSideBar} isActive={this.state.showSideBar} barColor="white" buttonWidth={16} toggleButton={this.isActive} className="header__menu" />
           <div className="brandL">
             <Link to="/" className="navbar-brand">
-              <img src={logo} className="img-responsive" height="150" width="220" alt="logo" />
+              <img src={logo} className="img-responsive" height="320" width="320" alt="logo" />
             </Link>
           </div>
           <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-overwrite" />

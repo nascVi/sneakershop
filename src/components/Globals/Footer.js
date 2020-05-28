@@ -8,7 +8,7 @@ import { IoLogoWhatsapp } from "react-icons/io"
 import { Link } from "gatsby"
 
 import { useScrollToTop } from '../hooks/scrollToTop';
-import logo from '../../images/logo.svg'
+import logo from '../../images/logo.png'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -26,7 +26,7 @@ const Footer = (props) => {
                                 onClick={() => setScrollToTop(true)}
                                 >
                                 <ScrollAnimation animateIn='bounceInRight'>
-                                <img src={logo} width="160" heihgt="90" alt="brand" />
+                                <img src={logo} width="280" heihgt="280" alt="brand" />
                                 ™
                                 </ScrollAnimation>
                             </div>
