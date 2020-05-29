@@ -5,8 +5,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `ShoesOne972 Gatsby + MDBReact version`,
-    description: `Shoes One est un sneakers shop pour les sneakers lovers.`,
+    title: `Shoesone Gatsby + MDBReact version`,
+    description: `Shoes One est un sneakers shop pour les amoureux des sneakers.`,
     author: `@lpchamps and @zlidev`,
   },
   plugins: [
@@ -54,13 +54,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-mdbreact`,
+        name: `Shoesone`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/Wlogo.svg`, // This path is relative to the root of the site.
       },
     },
 

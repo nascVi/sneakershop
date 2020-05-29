@@ -15,7 +15,7 @@ import { Link } from "gatsby"
 //   MDBContainer,
 // } from "mdbreact"
 
-import logo from '../../images/logo.png'
+import logo from '../../images/Wlogo.svg'
 import { FaShoppingBag } from "react-icons/fa"
 import Search from "../search/index"
 
@@ -79,7 +79,7 @@ class Navbar extends Component {
         <HamburgerElastic onClick={this.showSideBar} isActive={this.state.showSideBar} barColor="white" buttonWidth={16} toggleButton={this.isActive} className="header__menu" />
           <div className="brandL">
             <Link to="/" className="navbar-brand">
-              <img src={logo} className="img-responsive" height="320" width="320" alt="logo" />
+              <img src={logo} className="img-responsive" height="772" width="770" alt="logo" />
             </Link>
           </div>
           <FaShoppingBag className="cart cart-icon snipcart-checkout snipcart-overwrite" />
