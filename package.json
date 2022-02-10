@@ -29,7 +29,7 @@
     "google-map-react": "^1.1.5",
     "lodash": "^4.17.15",
     "mdbreact": "4.25.3",
-    "node-sass": "4.13.1",
+    "node-sass": "7.0.0",
     "prop-types": "15.7.2",
     "react": "16.13.0",
     "react-animate-on-scroll": "^2.1.5",
